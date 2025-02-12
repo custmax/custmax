@@ -1,0 +1,17 @@
+.sendCloudContainer {
+  width: 100%;
+  height: 100%;
+  padding-top: 90vpx;
+
+  .main {
+    width: 100%;
+    min-height: calc(100% - 90vpx);
+    background-color: #fff;
+    padding-bottom: 80vpx;
+
+    .btnSend {
+      margin-top: 100vpx;
+      margin-left: 200vpx;
+    }
+  }
+}

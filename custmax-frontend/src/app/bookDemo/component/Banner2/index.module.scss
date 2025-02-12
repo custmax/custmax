@@ -1,0 +1,61 @@
+.feature2Container {
+  display: flex;
+  width: 100%;
+  height: 500vpx;
+  display: flex;
+  flex-direction: column;
+  padding-left: 260vpx;
+  padding-top: 30vpx;
+  background-color: #F5F5FF;
+  position: relative;
+  //border-top: 2px solid #dfdfdf;
+  border-bottom: 2px solid #dfdfdf;
+
+  .title2 {
+    width: 600vpx;
+    height: 60vpx;
+    font-family: Arial;
+    font-weight: 600;
+    font-size: 42vpx;
+    color: black;
+    line-height: 56vpx;
+    display: flex;
+    margin-top: 100vpx;
+    margin-bottom: 80vpx;
+    //margin-left:60vpx;
+  }
+
+  .subTitle {
+    width: 640vpx;
+
+    line-height: 30vpx;
+    white-space: wrap;
+    margin-bottom: 30vpx;
+    //margin-left:60vpx;
+    &:nth-last-of-type(1) {
+      margin-bottom: 70vpx;
+    }
+
+    //.label {
+    //  font-family: Arial Bold;
+    //  font-weight: 600;
+    //  font-size: 20vpx;
+    //}
+
+    .value {
+      font-family: Source Han Sans;
+      font-size: 20vpx;
+    }
+  }
+  .imgBg1 {
+    position: absolute;
+    z-index: 20;
+    width: 500vpx;
+    height: 300vpx;
+    margin-top:100vpx;
+    //top:10vpx;
+    right: 300vpx;
+    border-radius: 30px 30px 30px 30px;
+    overflow: hidden;
+  }
+}

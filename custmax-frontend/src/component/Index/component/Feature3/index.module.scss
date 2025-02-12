@@ -1,0 +1,149 @@
+.feature3Container {
+  display: flex;
+  width: 100%;
+  height: 929vpx;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  position: relative;
+
+  .main {
+    position: relative;
+    width: 100%;
+    height: 440vpx;
+
+    .nextLevelBg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .contentBox {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 20;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .title {
+        width: 1149vpx;
+        height: 88vpx;
+        font-family: Arial, Arial;
+        font-weight: normal;
+        font-size: 40vpx;
+        color: #FFFFFF;
+        text-align: center;
+        margin-top: 106vpx;
+        margin-bottom: 60vpx;
+        font-weight: 600;
+      }
+
+
+
+      .tooltip {
+        :global {
+          .ant-tooltip {
+            --antd-arrow-background-color: #fff;
+            z-index: 999;
+            .ant-tooltip-arrow {
+            }
+            .ant-tooltip-content {
+              transform: translateX(100vpx);
+              width: 611vpx;
+              height: 69vpx;
+              .ant-tooltip-inner {
+                background-color: #fff;
+              }
+            }
+      
+            .more {
+              background: #FFFFFF;
+              border-radius: 6vpx;
+              font-family: PingFangSC, PingFang SC;
+              font-weight: 400;
+              font-size: 20vpx;
+              color: #727171;
+            }
+          }
+        }
+      }
+    
+      .link {
+        display: inline-block;
+        width: 326vpx;
+      }
+  
+      .signUp {
+        width: 330vpx;
+        height: 50vpx;
+        background: linear-gradient( 130deg, #3C4EFF 0%, #000AFF 100%, #000AFF 100%);
+        border-radius: 25vpx;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-family: Arial, Arial;
+        font-weight: 600;
+        font-size: 20vpx;
+        color: #FFFFFF;
+        cursor: pointer;
+      }
+    }
+
+  }
+
+  .subTitleBox {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50vpx;
+    margin-left: 998vpx;
+
+    .subTitle {
+      width: 670vpx;
+      line-height: 30vpx;
+      white-space: wrap;
+      margin-bottom: 50vpx;
+  
+      &:nth-last-of-type(1) {
+        margin-bottom: 70vpx;
+      }
+  
+      .label {
+        font-family: Arial Bold;
+        font-weight: 600;
+        font-size: 20vpx;
+      }
+  
+      .value {
+        font-family: Arial;
+        font-size: 20vpx;
+      }
+    }
+  }
+
+  .imgBg0 {
+    position: absolute;
+    z-index: 10;
+    width: 596vpx;
+    height: 447vpx;
+    background: #000AFF;
+    top: 399vpx;
+    left: 297vpx;
+  }
+
+  .imgBg1 {
+    position: absolute;
+    z-index: 20;
+    width: 596vpx;
+    height: 447vpx;
+    top: 364vpx;
+    left: 262vpx;
+  }
+}

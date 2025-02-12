@@ -1,0 +1,51 @@
+.feature2Container {
+  display: flex;
+  width: 100%;
+  height: 1000vpx;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1000vpx;
+  background-color: #F5F5FF;
+  position: relative;
+
+  .title {
+    width: 900vpx;
+    height: 132vpx;
+    font-family: Arial, Arial;
+    font-weight: 600;
+    font-size: 42vpx;
+    color: #000AFF;
+    margin-right:180vpx;
+    line-height: 60vpx;
+    margin-top: 300vpx;
+    margin-bottom: 15vpx;
+  }
+
+  .subTitle {
+    width: 700vpx;
+
+    line-height: 30vpx;
+    white-space: wrap;
+    margin-bottom: 30vpx;
+
+    &:nth-last-of-type(1) {
+      margin-bottom: 70vpx;
+    }
+    .value {
+      font-family: Source Han Sans;
+      font-size: 24vpx;
+    }
+  }
+
+
+  .imgBg1 {
+    position: absolute;
+    z-index: 20;
+    width: 640vpx;
+    height: 860vpx;
+    top:60vpx;
+    left: 260vpx;
+    border-radius: 30px 30px 30px 30px;
+    overflow: hidden;
+  }
+}

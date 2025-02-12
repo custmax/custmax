@@ -1,0 +1,194 @@
+.editTemplateContainer {
+  width: 100%;
+  height: 100%;
+  padding-top: 90vpx;
+
+  .main {
+    width: 100%;
+    min-height: calc(100% - 90vpx);
+    background-color: #fff;
+    padding-bottom: 80vpx;
+
+    .title {
+      height: 90vpx;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 170vpx;
+      margin-right: 40vpx;
+      border-bottom: 1px solid #E0E0E0;
+      box-sizing: border-box;
+
+      .titleLeft {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 400;
+        font-size: 20vpx;
+        color: #1E1E69;
+        line-height: 28vpx;
+      }
+
+      .operateBox {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .searchInputBox {
+          margin-right: 20vpx;
+          width: 240vpx;
+          height: 50vpx;
+          box-sizing: border-box;
+          padding-right: 45vpx;
+          position: relative;
+          border-radius: 25vpx;
+          border: 1px solid #E0E0E0;
+          overflow: hidden;
+
+          :global {
+            .ant-input {
+              width: 100%;
+              height: 100%;
+              border: 0;
+    
+              &::placeholder {
+              }
+
+              &:focus,
+              &:hover,
+              &:focus-visible {
+                border: 0;
+                box-shadow: none;
+              }
+            }
+    
+          }
+
+          .searchIconBox {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40vpx;
+            height: 40vpx;
+            background: #000AFF;
+            border-radius: 25vpx;
+            border: 1px solid #0A14D2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            .searchIcon {
+              width: 21vpx;
+              height: 21vpx;
+            }
+          }
+        }
+
+      }
+
+    }
+
+    .content {
+      margin-left: 170vpx;
+      margin-right: 40vpx;
+
+      .basicFormWrapper {
+        width: 100%;
+        box-sizing: border-box;
+        padding-right: 850vpx;
+        padding-top: 30vpx;
+        border-bottom: 1px solid #E0E0E0;
+
+        .basicForm {
+          :global {
+            .ant-form-item {
+              .ant-form-item-row {
+                .ant-form-item-label {
+                  > label {
+                    font-family: PingFan  gSC, PingFang SC;
+                    font-weight: 600;
+                    font-size: 20vpx;
+                    color: #666666;
+                  }
+                }
+  
+                .ant-form-item-control {
+                  .ant-form-item-control-input {
+                    min-height: 50vpx;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .radioWrapper {
+        padding: 20vpx 0;
+      }
+
+      .richTextTitle {
+        padding: 20vpx 0;
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 600;
+        font-size: 20vpx;
+        color: #666666;
+        line-height: 28vpx;
+      }
+
+      .richTextWrapper {
+        :global {
+          .ql-editor {
+            min-height: 362vpx;
+          }
+        }
+      }
+
+      .operateWrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20vpx;
+
+        .saveBtn {
+          font-family: PingFangSC, PingFang SC;
+          font-weight: 400;
+          font-size: 20vpx;
+          color: #FFFFFF;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          width: 160vpx;
+          height: 40vpx;
+          background: #000AFF;
+          border: 1px solid #0A14D2;
+          margin-right: 40vpx;
+          cursor: pointer;
+        }
+
+        .cancelBtn {
+          font-family: PingFangSC, PingFang SC;
+          font-weight: 400;
+          font-size: 20vpx;
+          color: #000AFF;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          width: 160vpx;
+          height: 40vpx;
+          background: #FFFFFF;
+          border: 1px solid #0A14D2;
+          cursor: pointer
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.accountConfirmContainer {
+  width: 100%;
+  padding-top: 90vpx;
+
+  .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .title {
+      font-family: PingFangSC, PingFang SC;
+      font-weight: 600;
+      font-size: 30vpx;
+      color: #333333;
+      line-height: 42vpx;
+      margin-top: 80vpx;
+      margin-bottom: 50vpx;
+    }
+
+    .tip {
+      width: 750vpx;
+      height: 56vpx;
+      font-family: PingFangSC, PingFang SC;
+      font-weight: 400;
+      font-size: 20vpx;
+      color: #999999;
+      line-height: 28vpx;
+      text-align: center;
+      margin-bottom: 27vpx;
+    }
+
+    .accountBg {
+      width: 426vpx;
+      height: 326vpx;
+    }
+
+    .linkBox {
+      font-size: 20vpx;
+      color: #999999;
+      line-height: 28vpx;
+      font-family: PingFangSC, PingFang SC;
+      margin-top: 27vpx;
+      margin-bottom: 40vpx;
+    }
+
+    .nextStep {
+      width: 200vpx;
+      height: 50vpx;
+      background: #000AFF;
+
+      font-family: PingFangSC, PingFang SC;
+      font-weight: 600;
+      font-size: 20vpx;
+      color: #FFFFFF;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+}

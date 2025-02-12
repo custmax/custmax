@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activate Account</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .background {
+            width: 100%;
+            min-height: 100vh;
+            background-color: #f2f2f2;
+            position: relative;
+        }
+        .background-top {
+            width: 100%;
+            height: 160px;
+            background-image: url('http://69.164.202.126:9001/cusob/website_png/background.png');
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px;
+        }
+        .background-top img {
+            width: 150px;
+        }
+        .background-bottom {
+            width: 100%;
+            flex: 1;
+        }
+        .container {
+            max-width: 600px;
+            width: 90%;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .content {
+            padding: 40px;
+            padding-left: 6em;
+            padding-right: 6em;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        .content h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .content p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .footer {
+            padding-top: 0; /* 移除顶部 padding */
+            padding-bottom: 20px; /* 在底部添加 padding */
+            text-align: center;
+            font-size: 14px;
+            color: #999;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+        .activate-btn {
+            background-color: #6A0DAD;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 16px;
+            display: block;
+            margin: 0 auto;
+            width: fit-content;
+            transition: background-color 0.3s ease;
+        }
+        .activate-btn:hover{
+            background-color: #7B1EDE;
+        }
+        .line {
+            position: relative;
+            height: 1px;
+            background-color: #ddd;
+            margin: 30px auto;
+            width: 80%;
+        }
+        @media (max-width: 600px) {
+            .content {
+                padding: 20px;
+            }
+            .content h1 {
+                font-size: 20px;
+            }
+            .content p {
+                font-size: 14px;
+            }
+            .activate-btn {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="background">
+    <div class="background-top">
+        <img src="http://69.164.202.126:9001/cusob/website_png/logo.png" alt="CusOb Logo">
+    </div>
+    <div class="background-bottom"></div>
+</div>
+<div class="container">
+    <div class="content">
+        <h1>Welcome to CusOb!</h1>
+        <p>You are receiving this email because you recently signed up for a CusOb account.<br> Confirm your email address by clicking the button below. This step increases the security of your business by verifying that you have this email.</p>
+    </div>
+    <a href="---code---" class="activate-btn">Activate Account</a>
+    <div class="line"></div>
+    <div class="footer">
+        <p>Call us at 001 517 7606 888</p>
+        <p>Copyright &copy; 2024 Customer Obsession Inc.</p>
+    </div>
+</div>
+</body>
+</html>

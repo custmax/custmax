@@ -1,0 +1,62 @@
+.unsubscribeContainer {
+  width: 100%;
+  height: 100%;
+  background-color: #fffcf5;
+
+  .main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 300vpx;
+
+    .cusob {
+      width: 167vpx;
+      height: 45vpx;
+      position: relative;
+
+      .logo {
+        position: absolute;
+        z-index: 10;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .content {
+      width: 600vpx;
+      height: 200vpx;
+      background-color: white;
+      border-radius: 10vpx;
+      display: flex;
+      flex-direction: column;
+      padding: 20vpx;
+      margin-top: 40vpx;
+
+      .txtUnsubscribe{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40vpx;
+        font-size: 30vpx;
+      }
+
+      .btns {
+        margin-left: auto;
+        margin-right: auto;
+
+        .btnOk {
+
+        }
+
+        .btnCancel {
+          margin-left: 20vpx;
+        }
+      }
+    }
+
+
+  }
+}

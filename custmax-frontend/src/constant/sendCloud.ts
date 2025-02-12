@@ -1,0 +1,6 @@
+export const SENDCLOUD_API = "https://api2.sendcloud.net"
+export const API_USER = "cusob_batch01"
+export const API_KEY = "306994509423de368b8a338ecc14e750"
+export const API_BASE64 = "ZGxnZW1zOmNlM2VhYzM1MzgzMzVhMWVjZWZkMjk3NjMzNWUzZDU1"
+export const SENDER_EMAIL = "cusob@mail.email-marketing-hub.com"
+export const SENDER_NAME = "CusOb"

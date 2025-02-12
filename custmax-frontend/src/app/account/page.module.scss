@@ -1,0 +1,128 @@
+.accountContainer {
+  width: 100%;
+  height: 100%;
+  padding-top: 90vpx;
+
+  .main {
+    width: 100%;
+    min-height: calc(100% - 90vpx);
+    background-color: #fff;
+    padding-bottom: 65vpx;
+
+    .title {
+      font-family: PingFangSC, PingFang SC;
+      font-weight: 400;
+      font-size: 20vpx;
+      color: #1E1E69;
+      line-height: 28vpx;
+      height: 90vpx;
+      display: flex;
+      align-items: center;
+      margin-left: 170vpx;
+      margin-right: 40vpx;
+      border-bottom: 1px solid #E0E0E0;
+    }
+
+    .content {
+      width: 100%;
+      box-sizing: border-box;
+      padding-left: 500vpx;
+      padding-right: 500vpx;
+
+      .avatarUploader {
+        padding-left: 20%;
+        margin-top: 30vpx;
+        margin-bottom: 30vpx;
+
+        .avatarImg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .accountForm {
+
+        :global {
+          .ant-form-item {
+            &:nth-of-type(2) {
+              margin-bottom: 0;
+            }
+            &:nth-of-type(3) {
+              margin-top: 30vpx;
+            }
+            .ant-form-item-row {
+              .ant-form-item-label {
+                > label {
+                  font-family: PingFangSC, PingFang SC;
+                  font-weight: 600;
+                  font-size: 20vpx;
+                  color: #666666;
+                }
+              }
+
+              .ant-form-item-control {
+                .ant-form-item-control-input {
+                  min-height: 50vpx;
+                }
+              }
+            }
+          }
+        }
+
+        .changeBtn {
+          height: 50vpx;
+          width: 240vpx;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: Arial;
+          font-size: 18vpx;
+          color: #FFFFFF;
+          background-color: #000AFF;
+          cursor: pointer;
+        }
+      }
+
+      .operateBox {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 60vpx;
+
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 400;
+        font-size: 18vpx;
+
+        .cancel {
+          width: 100vpx;
+          height: 40vpx;
+          background: #F5F8FF;
+          border-radius: 20vpx;
+          border: 1px solid #000AFF;
+          margin-right: 20vpx;
+          color: #000AFF;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+        }
+
+        .save {
+          width: 100vpx;
+          height: 40vpx;
+          background: #000AFF;
+          border-radius: 20vpx;
+          border: 1px solid #0A14D2;
+          color: #fff;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

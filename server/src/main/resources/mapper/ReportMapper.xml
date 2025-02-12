@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cusob.mapper.ReportMapper">
+
+    <select id="pageQuery" resultType="com.cusob.vo.ReportVo">
+        SELECT report.id, campaign.campaign_name, contact_groups.group_name,
+               campaign.send_time, report.deliver_count, report.delivered, report.clicked, report.opened
+        FROM report JOIN campaign on report.campaign_id = campaign.id join contact_groups on report.group_id = contact_groups.id
+        WHERE report.user_id = #{userId} and report.is_deleted = 0
+        <if test="keyword != null and keyword != ''">
+            and campaign.campaign_name like concat('%', #{keyword}, '%')
+        </if>
+    </select>
+
+    <select id="pageQueryByCompanyId" resultType="com.cusob.vo.ReportVo">
+        SELECT report.id, campaign.campaign_name, contact_groups.group_name,
+               campaign.send_time, report.deliver_count, report.delivered, report.clicked, report.opened
+        FROM report JOIN campaign on report.campaign_id = campaign.id join contact_groups on report.group_id = contact_groups.id
+        WHERE report.company_id = #{companyId} and report.is_deleted = 0
+        <if test="keyword != null and keyword != ''">
+            and campaign.campaign_name like concat('%', #{keyword}, '%')
+        </if>
+    </select>
+</mapper>

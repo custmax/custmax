@@ -1,0 +1,73 @@
+.senderListContainer{
+  width: 100%;
+  height: 100%;
+  padding-top: 90vpx;
+  padding-left: 120vpx;
+
+  .main{
+    width: 100%;
+    min-height: calc(100% - 90vpx);
+    background-color: #fff;
+    padding-bottom: 28vpx;
+
+    .addSender{
+      margin-top: 50vpx;
+      margin-left: 100vpx;
+
+      .buttonAdd{
+        height: 50vpx;
+        width: 120vpx;
+        background: #000AFF;
+        border-radius: 5vpx;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: ArialMT;
+        font-size: 18vpx;
+        color: #FFFFFF;
+        cursor: pointer;
+      }
+    }
+
+    .verifyNotice{
+      margin-top: 50vpx;
+      width: 1600vpx;
+      height: 50vpx;
+      border: #FFEBB4 solid 1px;
+      background-color: #FFFFF7;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      align-items: center;
+
+      .noticeTxt{
+        margin-left: 50vpx;
+      }
+    }
+
+    .tableDomain{
+      margin-top: 50vpx;
+      width: 1600vpx;
+      margin-left: auto;
+      margin-right: auto;
+
+      .iconFalse{
+        color: red;
+      }
+
+      .iconTrue{
+        color: green;
+      }
+
+    }
+  }
+
+}
+.create{
+  .input{
+    margin-top: 20vpx;
+  }
+  .detail{
+    font-size: 15vpx;
+  }
+}

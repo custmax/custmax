@@ -1,0 +1,82 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.180.247/cusob?characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: root
+    password: BcY36e4UkVL1vmfN
+  redis:
+    host: 69.164.202.126
+    port: 6379
+    password: cusob
+  rabbitmq:
+    host: 69.164.202.126
+    port: 5672
+    username: guest
+    password: guest
+    publisher-confirm-type: CORRELATED  #发布确认模式，消息是否被成功发送到交换机
+    publisher-returns: true
+    listener:
+      simple:
+        prefetch: 1
+        concurrency: 3
+        acknowledge-mode: manual   #消费端手动确认
+  servlet:
+    multipart:
+      max-file-size: 10MB   # 单个文件上传的最大上限
+      max-request-size: 100MB  # 整个请求体的最大上限
+  mail:
+    host: smtp.larksuite.com
+    # 发送者邮箱
+    username: hello@cusob.com
+    # 配置密码,注意不是真正的密码，而是刚刚申请到的授权码
+#    password: euyv1dm6DzK50hGC
+    password: qzng7UpB7A90kd8K
+    # 端口号465或587
+    port: 465
+    # 默认的邮件编码为UTF-8
+    default-encoding: UTF-8
+    # 其他参数
+    properties:
+      mail:
+        # 配置SSL 加密工厂
+        smtp:
+          ssl:
+            # 本地测试，先放开ssl
+            enable: true
+          # 开启debug模式，这样邮件发送过程的日志会在控制台打印出来，方便排查错误
+        debug: true
+
+cusob:
+  url: https://www.cusob.com
+  host: http://www.cusob.com:8080
+  phone: 001 517 7606 888
+  cf-secret-key: 0x4AAAAAAAbYSzALmlAgdCCHu8ISaZVj_UA
+  website: www.cusob.com
+  jwt:
+    # 设置jwt签名加密时使用的秘钥
+    secret-key: cusob
+    # 设置jwt过期时间
+    ttl: 1209600000 # 14天
+    # 设置前端传递过来的令牌名称
+    token-name: token
+  email:
+    brooks: brooks@cusob.com
+    daybreak: daybreak@chtrak.com
+  domain:
+    spf: v=spf1 mx a:mail.email-marketing-hub.com ~all
+    mx: mail.email-marketing-hub.com.
+    smtp: mail.email-marketing-hub.com
+    imap: mail.email-marketing-hub.com
+    dkim:
+      selector: dkim
+      prefix: v=DKIM1; k=rsa; p=
+
+paypal:
+  client:
+    app: ATfZAHiAmOaGFAoGhgP9vjkhSuR60qUB_t5rjRcvmQJfwAFcC3KCreNQkyJmxp1-oGyyAa5bNq7fpxB7
+    secret: EDtUDY5hGm_iCBY6xuCERBCfvVhx7PhkLqnm0PxkmIgwKkkWg8udmHKcZhAhS7hgJNkyScT-60pKwwOi
+  mode: live
+stripe:
+  successUrl: https://www.cusob.com/dashboard
+  cancelUrl: https://www.cusob.com/pricing

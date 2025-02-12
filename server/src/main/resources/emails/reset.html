@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset password</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .background {
+            width: 100%;
+            min-height: 100vh;
+            background-color: #f2f2f2;
+            position: relative;
+        }
+        .background-top {
+            width: 100%;
+            height: 160px;
+            /*background-image: url('http://69.164.202.126:9001/cusob/website_png/background.png');*/
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px;
+        }
+        .background-bottom {
+            width: 100%;
+            flex: 1;
+        }
+        .container {
+            max-width: 600px;
+            width: 90%;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 20px;
+            overflow: hidden;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .content {
+            padding: 40px;
+            padding-left: 4em;
+            padding-right: 4em;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        .content img{
+            width: 150px;
+        }
+        .content h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .content p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .footer {
+            padding-top: 0; /* 移除顶部 padding */
+            padding-bottom: 20px; /* 在底部添加 padding */
+            text-align: center;
+            font-size: 14px;
+            color: #999;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+        .reset-btn {
+            background-color: #7241FF;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 16px;
+            display: block;
+            margin: 0 auto;
+            width: fit-content;
+            transition: background-color 0.3s ease;
+        }
+        .reset-btn:hover{
+            background-color: #7B1EDE;
+        }
+        .line {
+            position: relative;
+            height: 1px;
+            background-color: #ddd;
+            margin: 30px auto;
+            width: 80%;
+        }
+        @media (max-width: 600px) {
+            .content {
+                padding: 20px;
+            }
+            .content h1 {
+                font-size: 20px;
+            }
+            .content p {
+                font-size: 14px;
+            }
+            .reset-btn {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="background">
+    <div class="background-top">
+    </div>
+    <div class="background-bottom"></div>
+</div>
+<div class="container">
+    <div class="content">
+        <!--        <img src="http://69.164.202.126:9001/cusob/website_png/logo2.png" alt="CusOb Logo">-->
+        <h1 style="font-size:30px ;color:#7241FF">Forgot your password?</h1>
+        <br>
+        <p style="font-size:20px">Don't worry ,we are always here with you</p>
+        <p>We got a request to reset the password for the account.</p>
+        <p>If you didn't request this , you can safely ignore this email.</p>
+        <br>
+        <br>
+        <a href="http://example.com" class="reset-btn">Reset password</a>
+        <br>
+        <div class="line"></div>
+        <br>
+        <p class="little">If you have any questions , feel free to contact us with:<br>Phone Number : 001 517 7606 888<br>Email Address :hello@cusob.com</p>
+        <br>
+        <p>Thank you</p>
+        <p style="font-weight: bold">Cusob Team</p>
+        <a href="https://www.cusob.com" style="color:blue">www.cusob.com</a>
+    </div>
+    <div class="footer">
+        <p>Call us at 001 517 7606 888</p>
+        <p>Copyright &copy; 2024 Customer Obsession Inc.</p>
+    </div>
+
+</div>
+</body>
+</html>

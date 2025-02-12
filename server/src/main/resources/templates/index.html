@@ -1,0 +1,148 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stripe Payment Demo</title>
+</head>
+<body>
+<div>
+    <h1>支付方式1  创建商品并去支付</h1>
+    <button type="button" onclick="toPay()">创建商品并去支付</button><br><br>
+</div>
+<div>----------------------------------------------分割线---------------------------------------------------------</div>
+<div>
+    <h1>支付方式2 自定义金额支付</h1>
+    <strong>这里得填写卡号信息，卡号在这里获取测试的  https://stripe.com/docs/testing   我这里用的是 4242424242424242 这个卡号</strong>
+
+    <div id="card-element"></div>
+    <button id="pay-button">Pay $10.00</button>
+</div>
+<div>----------------------------------------------分割线---------------------------------------------------------</div>
+<div>
+    <h1>支付方式3 自定义金额支付</h1>
+    <strong>这里得填写卡号信息，卡号在这里获取测试的  https://stripe.com/docs/testing   我这里用的是 4242424242424242 这个卡号</strong>
+
+    <form id="payment-form">
+        <div>
+            <label for="card-number">Card Number:</label>
+            <div id="card-number"></div>
+        </div>
+
+        <div>
+            <label for="card-expiry">Expiration Date:</label>
+            <div id="card-expiry"></div>
+        </div>
+        <div>
+            <label for="card-cvc">CVC:</label>
+            <div id="card-cvc"></div>
+        </div>
+        <button id="pay-button3" type="submit">Pay $10.00</button>
+    </form>
+</div>
+<script src="https://js.stripe.com/v3/"></script>
+<script src="/jquery.min.js"></script>
+<script>
+
+    /*支付方式1  begin  */
+    function toPay() {
+        $.ajax({
+            type : 'post',
+            url : '/pay',
+            data : {},
+            success : function(res) {
+                alert(res)
+                window.location.href = res;
+            },
+            error : function(res) {
+                alert("网络错误");
+            }
+        });
+    }
+    /*支付方式1  end  */
+
+
+    /*支付方式2  begin  */
+    // 设置Stripe的publishable key
+    const stripe = Stripe('pk_test_51OdpO2AoVkBuwi1lpRx8fmBPT3T1rHrj0ooLs9CxBOhYPvk8svC2sllDs6OrmPZ0ye3yvvWCJfY5NYnfNNCpsXQL00JTBwtKlM');
+    // 创建card元素
+    const cardElement = stripe.elements().create('card');
+    // 将card元素添加到DOM中
+    cardElement.mount('#card-element');
+
+    // 监听支付按钮的点击事件
+    document.getElementById('pay-button').addEventListener('click', async(event) => {
+        // 禁用支付按钮
+        event.target.disabled = true;
+    $.ajax({
+        type : 'post',
+        url : '/pay2',
+        data : {},
+        success : function(res) {
+            console.log(res);
+            // 使用Stripe.js确认支付
+            stripe.confirmCardPayment(res, {
+                payment_method: {
+                    card: cardElement
+                }
+            }).then(function(result) {
+                alert("result---"+JSON.stringify(result));
+                if (result.error) {
+                    // 处理错误
+                    window.location.href = "/cancel";
+                } else {
+                    // 处理成功
+                    window.location.href = "/success";
+                }
+            });
+        },
+        error : function(res) {
+            alert("网络错误");
+        }
+    })
+    })
+    /*支付方式2  end  */
+
+
+    /*支付方式3  begin  */
+    var stripe2 = Stripe('pk_test_51OdpO2AoVkBuwi1lpRx8fmBPT3T1rHrj0ooLs9CxBOhYPvk8svC2sllDs6OrmPZ0ye3yvvWCJfY5NYnfNNCpsXQL00JTBwtKlM');
+    var elements = stripe2.elements();
+    var cardNumberElement = elements.create('cardNumber');
+    var cardExpiryElement = elements.create('cardExpiry');
+    var cardCvcElement = elements.create('cardCvc');
+    cardNumberElement.mount('#card-number');
+    cardExpiryElement.mount('#card-expiry');
+    cardCvcElement.mount('#card-cvc');
+    var form = document.getElementById('payment-form');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        stripe2.createToken(cardNumberElement).then(function(result) {
+            if (result.error) {
+                // 处理错误
+                alert(result.error.message);
+            } else {
+                // Token 创建成功，将其传递给后端代码
+                var token = result.token.id;
+                console.log(token)
+                $.ajax({
+                    type : 'post',
+                    url : '/pay3',
+                    data : {"token":token},
+                    success : function(res) {
+                        alert(res)
+                        window.location.href = res;
+                    },
+                    error : function(res) {
+                        alert("网络错误");
+                    }
+                });
+            }
+        });
+    });
+    /*支付方式3  end  */
+
+</script>
+</body>
+</html>

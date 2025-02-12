@@ -1,0 +1,107 @@
+.headerContainer {
+  width: 100%;
+  height: 90vpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-left: 40vpx;
+  padding-right: 60vpx;
+  box-sizing: border-box;
+  z-index: 100;
+  background-color: #fff;
+  border-bottom: 1px solid #BCBAB8;
+
+  .logoBox {
+    width: 167vpx;
+    height: 45vpx;
+  }
+
+  .right {
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+    .notification {
+      width: 22vpx;
+      height: 22vpx;
+      margin-right: 50vpx;
+      cursor: pointer;
+    }
+
+    .avatar {
+      width: 30vpx;
+      height: 30vpx;
+      overflow: hidden;
+      margin-right: 10vpx;
+    }
+
+    .tooltip {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      .nickname {
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 400;
+        font-size: 20vpx;
+        color: #333333;
+        line-height: 26px;
+        margin-right: 10vpx;
+      }
+
+      .arrowDown {
+        width: 16vpx;
+        height: 8vpx;
+      }
+    }
+  }
+
+  :global {
+    .ant-tooltip {
+      --antd-arrow-background-color: #fff;
+      .ant-tooltip-arrow {
+      }
+      .ant-tooltip-content {
+        .ant-tooltip-inner {
+          background-color: #fff;
+        }
+      }
+
+      .more {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        width: 200vpx;
+        .more-item {
+          width: 100%;
+          height: 60vpx;
+          background: rgba(145,148,245,0.1);
+          border-radius: 2vpx;
+          display: flex;
+          align-items: center;
+          box-sizing: border-box;
+          padding-left: 12vpx;
+          font-family: PingFangSC, PingFang SC;
+          font-weight: 600;
+          font-size: 20vpx;
+          color: #000AFF;
+          margin-bottom: 8px;
+          cursor: pointer;
+          //&.mb0 {
+          //  margin-bottom: 0;
+          //  cursor: pointer;
+          //}
+        }
+      }
+    }
+  }
+
+  .signout {
+    color: #808080;
+    background-color: #fff;
+    cursor: pointer;
+  }
+}

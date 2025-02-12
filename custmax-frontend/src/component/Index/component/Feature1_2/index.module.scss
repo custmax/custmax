@@ -1,0 +1,183 @@
+.feature2Container {
+  display: flex;
+  width: 100%;
+  height: 1000vpx;
+  display: flex;
+  flex-direction: column;
+  padding-left: 260vpx;
+  padding-top: 75vpx;
+  background-color: #F5F5FF;
+  position: relative;
+  border-top: 2px solid #dfdfdf;
+
+  .title {
+    //position: absolute;
+    width: 1400vpx;
+    height: 56vpx;
+    font-family: Arial, Arial;
+    font-weight: 600;
+    font-size: 48vpx;
+    color: #1A1A1A;
+    line-height: 56vpx;
+    display: flex;
+    //margin-top: 50vpx;
+    margin-bottom: 40vpx;
+    //justify-content: center; /* 使元素水平居中 */
+    //align-items: center;
+  }
+  .title2 {
+    width: 640vpx;
+    height: 60vpx;
+    font-family: Arial;
+    font-weight: 600;
+    font-size: 42vpx;
+    color: #000AFF;
+    line-height: 56vpx;
+    display: flex;
+    margin-top: 200vpx;
+    margin-bottom: 40vpx;
+    //margin-left:60vpx;
+  }
+
+  .subTitle {
+    width: 580vpx;
+
+    line-height: 30vpx;
+    white-space: wrap;
+    margin-bottom: 30vpx;
+    //margin-left:60vpx;
+    &:nth-last-of-type(1) {
+      margin-bottom: 70vpx;
+    }
+
+    //.label {
+    //  font-family: Arial Bold;
+    //  font-weight: 600;
+    //  font-size: 20vpx;
+    //}
+
+    .value {
+      font-family: Source Han Sans;
+      font-size: 24vpx;
+    }
+  }
+
+  .tooltip {
+    :global {
+      .ant-tooltip {
+        --antd-arrow-background-color: #fff;
+        .ant-tooltip-arrow {
+        }
+        .ant-tooltip-content {
+          width: 611vpx;
+          height: 69vpx;
+          .ant-tooltip-inner {
+            background-color: #fff;
+          }
+        }
+  
+        .more {
+          background: #FFFFFF;
+          border-radius: 6vpx;
+          font-family: PingFangSC, PingFang SC;
+          font-weight: 400;
+          font-size: 20vpx;
+          color: #727171;
+        }
+      }
+    }
+  }
+
+  .link {
+    display: inline-block;
+    width: 300vpx;
+    margin-right: 100vpx;
+
+    &:nth-last-of-type(1) {
+      padding-right: 70vpx;
+    }
+  }
+
+  .signUp {
+    position: relative;
+    width: 300vpx;
+    height: 60vpx;
+    background: #7241FF;
+    box-shadow: 0px 3px 5px 0px #222B8A;
+    border-radius: 30px 30px 30px 30px;
+    //border: 1px solid #0A14D2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    //padding-left: 25vpx;
+
+    font-family: Source Han Sans;
+    font-size: 36vpx;
+    font-weight: bold;
+    color: #FFFFFF;
+    cursor: pointer;
+
+    .signUpArrow {
+      width: 20vpx;
+      height: 20vpx;
+      position: absolute;
+      z-index: 10;
+      top: 50%;
+      right: 15vpx;
+      transform: translateY(-50%);
+    }
+  }
+
+  //.imgBg0 {
+  //  position: absolute;
+  //  z-index: 10;
+  //  width: 407vpx;
+  //  height: 543vpx;
+  //  background: #000AFF;
+  //  top: 237vpx;
+  //  right: 262vpx;
+  //}
+
+  .imgBg1 {
+    position: absolute;
+    z-index: 20;
+    width: 700vpx;
+    height: 726vpx;
+    top:240vpx;
+    right: 240vpx;
+    border-radius: 30px 30px 30px 30px;
+    overflow: hidden;
+  }
+  .bookDemo {
+    position: relative;
+    width: 300vpx;
+    height: 60vpx;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 5px 0px #222B8A;
+    border-radius: 30px 30px 30px 30px;
+    border: 1px solid #7241FF;
+    //border: 1px solid #0A14D2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    //padding-left: 25vpx;
+
+    font-family: Source Han Sans;
+    font-size: 36vpx;
+    font-weight: bold;
+    color: #7241FF;
+    cursor: pointer;
+
+    .bookDemoArrow {
+      width: 20vpx;
+      height: 20vpx;
+      position: absolute;
+      z-index: 10;
+      top: 50%;
+      right: 15vpx;
+      transform: translateY(-50%);
+    }
+  }
+}

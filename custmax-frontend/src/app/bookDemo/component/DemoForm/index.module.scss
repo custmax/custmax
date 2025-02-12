@@ -1,0 +1,105 @@
+.formContainer {
+  width: 100%;
+  height: 800vpx;
+  box-sizing: border-box;
+  .custom-input {
+    border-color: #3498db; /* 边框颜色 */
+    border-radius: 80px;    /* 圆角效果 */
+    background-color: yellow;
+  }
+
+  .custom-input:focus {
+    border-color: #2980b9; /* 聚焦时的边框颜色 */
+    box-shadow: 0 0 0 2px rgba(41, 128, 185, 0.2); /* 聚焦时的阴影效果 */
+  }
+
+  .formBox {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 80vpx;
+    padding-left: 280vpx;
+
+    .formWrapper {
+      max-width: 1064vpx;
+      margin-left: 120vpx;
+      .submitBtn {
+        //width: 187vpx;
+        //height: 60vpx;
+        //background: #000AFF;
+        //border-radius: 20vpx;
+        //
+        //display: flex;
+        //align-items: center;
+        //justify-content: center;
+        //
+        //font-family: PingFangSC, PingFang SC;
+        //font-size: 22vpx;
+        //color: #FFFFFF;
+        //font-weight: 500;
+        width: 280vpx;
+        height: 60vpx;
+        background: #7241FF;
+
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 600;
+        font-size: 24vpx;
+        color: #FFFFFF;
+        border-radius: 30px 30px 30px 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left:-100vpx;
+        //margin: 22vpx 0;
+        cursor: pointer;
+      }
+
+      :global {
+        .ant-form-item {
+          margin-bottom: 40vpx;
+
+          .ant-form-item-row {
+            display: flex;
+            align-items: center;
+            .ant-form-item-label {
+              margin-right: 66vpx;
+              font-family: PingFangSC, PingFang SC;
+              font-weight: 600;
+              font-size: 20vpx;
+              color: #666666;
+              font-size: 14vpx;
+              .ant-form-item-required {
+              }
+            }
+
+            .ant-form-item-control {
+              .ant-form-item-control-input {
+                .ant-form-item-control-input-content {
+                  .ant-space {
+                    display: flex;
+                    .ant-space-item {
+                      flex: 1;
+                      .ant-form-item {
+                        margin: auto;
+                      }
+                    }
+                  }
+
+                  .ant-input {
+                    flex: 1;
+                    height: 50vpx;
+                    background: #FFFFFF;
+                    border: 1px solid #E0E0E0;
+                  }
+                  textarea.ant-input {
+                    height: 200vpx;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

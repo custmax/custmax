@@ -1,0 +1,55 @@
+.bannerContainer {
+  width: 100%;
+  height: 418vpx;
+  position: relative;
+
+  .bannerBg {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .content {
+    position: absolute;
+    z-index: 20;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .slogan {
+      font-family: Arial, Arial;
+      font-weight: normal;
+      font-size: 30vpx;
+      color: #FFFFFF;
+      box-sizing: border-box;
+      height: 99vpx;
+      width: 855vpx;
+      line-height: 34vpx;
+      text-align: center;
+      margin-top: 110vpx;
+      margin-bottom: 80vpx;
+    }
+
+    .signUp {
+      width: 378vpx;
+      height: 59vpx;
+      background: #6C72FF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: PingFangSC, PingFang SC;
+      font-weight: 600;
+      font-size: 24vpx;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}

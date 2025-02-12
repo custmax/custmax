@@ -1,0 +1,219 @@
+.addSenderContainer {
+  width: 100%;
+  height: 100%;
+  padding-top: 90vpx;
+
+  .main {
+    width: 100%;
+    min-height: calc(100% - 90vpx);
+    background-color: #fff;
+    padding-bottom: 123vpx;
+
+    .title {
+      font-family: PingFangSC, PingFang SC;
+      font-weight: 400;
+      font-size: 20vpx;
+      color: #1E1E69;
+      line-height: 28vpx;
+      height: 90vpx;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 170vpx;
+      margin-right: 40vpx;
+      border-bottom: 1px solid #E0E0E0;
+
+      .titleLeft {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 400;
+        font-size: 20vpx;
+        color: #1E1E69;
+        line-height: 28vpx;
+      }
+
+      .exitBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100vpx;
+        height: 40vpx;
+        background: #000AFF;
+        border-radius: 20vpx;
+        border: 1px solid #0A14D2;
+
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 600;
+        font-size: 18vpx;
+        color: #FFFFFF;
+        cursor: pointer;
+      }
+
+    }
+
+    .content {
+      width: 100%;
+      box-sizing: border-box;
+      padding-left: 295vpx;
+      padding-right: 295vpx;
+      padding-top: 155vpx;
+      display: flex;
+      justify-content: space-between;
+
+      .card {
+        position: relative;
+        width: 390vpx;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 400;
+        font-size: 24vpx;
+        color: #000000;
+
+        background: #FFFFFF;
+        border-radius: 10vpx;
+        border: 1px solid #E0E0E0;
+        cursor: pointer;
+
+        .radio {
+          position: absolute;
+          width: 24vpx;
+          height: 24vpx;
+          top: 30vpx;
+          right: 30vpx;
+        }
+
+        .vertifyIcon {
+          position: absolute;
+          top: 30vpx;
+          left: 30vpx;
+          width: 22vpx;
+          height: 25vpx;
+        }
+
+        &.active {
+          background: #F5F5FE;
+        }
+
+      }
+    }
+  }
+}
+
+
+
+.vertifyModal {
+
+  :global {
+    .ant-modal {
+      .ant-modal-content {
+        .ant-modal-header {
+          .ant-modal-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: PingFangSC, PingFang SC;
+            font-weight: 600;
+            font-size: 28vpx;
+            color: #333333;
+          }
+        }
+      }
+    }
+  }
+
+  .addressTitle {
+    font-family: PingFangSC, PingFang SC;
+    font-weight: 600;
+    font-size: 20vpx;
+    color: #666666;
+    line-height: 28vpx;
+    margin-bottom: 30vpx;
+    margin-top: 30vpx;
+  }
+
+  .emailWrapper {
+    width: 100%;
+    display: flex;
+
+    .sendBtn {
+      width: 450vpx;
+      height: 50vpx;
+      background: #000AFF;
+      border: 1px solid #0A14D2;
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      font-family: PingFangSC, PingFang SC;
+      font-weight: 400;
+      font-size: 20vpx;
+      color: #FFFFFF;
+      cursor: pointer;
+    }
+  }
+
+  .codeInput {
+    height: 50vpx;
+  }
+
+}
+
+.binderModal {
+
+  :global {
+    .ant-modal {
+      .ant-modal-content {
+        .ant-modal-header {
+          .ant-modal-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: PingFangSC, PingFang SC;
+            font-weight: 600;
+            font-size: 28vpx;
+            color: #333333;
+            margin-bottom: 40vpx;
+          }
+        }
+      }
+    }
+  }
+
+  .formWrapper {
+    width: 100%;
+    padding: 0 20vpx;
+    position: relative;
+  }
+  .formControls{
+    margin-left: 30vpx;
+  }
+  .err{
+    margin-top: 0;
+    text-align: center;
+    color: red;
+  }
+
+  .checkboxWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .checkBox {
+      font-family: PingFangSC, PingFang SC;
+      font-weight: 400;
+      font-size: 20vpx;
+      color: #666666;
+    }
+
+  }
+
+}

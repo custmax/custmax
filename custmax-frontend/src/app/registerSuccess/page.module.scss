@@ -1,0 +1,62 @@
+/* styles/Verified.module.scss */
+.container {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('http://69.164.202.126:9001/cusob/website_png/background_register.png') no-repeat center center;
+  background-size: cover;
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+
+  width: 400px;
+  max-width: 100%;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.message {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  padding: 1px 20px;
+}
+
+.description {
+  font-size: 16px;
+  color: #666;
+  padding: 1px 20px;
+  margin-bottom: 30px;
+}
+
+.ctaBtn {
+  background-color: #6A0DAD;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 16px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.ctaBtn:hover {
+  background-color: #7B1EDE;
+}

@@ -1,0 +1,45 @@
+.feature1Container {
+  display: flex;
+  width: 100%;
+  background-color: #F5F5FE;
+  padding-bottom: 51vpx;
+
+  .item {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .imgBox0 {
+      width: 293vpx;
+      height: 229vpx;
+      margin-top: 154vpx;
+      margin-bottom: 70vpx;
+    }
+
+    .imgBox1 {
+      width: 276vpx;
+      height: 237vpx;
+      margin-top: 154vpx;
+      margin-bottom: 62vpx;
+    }
+
+    .imgBox2 {
+      width: 212vpx;
+      height: 294vpx;
+      margin-top: 146vpx;
+      margin-bottom: 13vpx;
+    }
+
+    .text {
+      width: 398vpx;
+      font-family: Arial, Arial;
+      font-weight: 600;
+      font-size: 30vpx;
+      color: #333333;
+      line-height: 34px;
+      text-align: center;
+    }
+  }
+}

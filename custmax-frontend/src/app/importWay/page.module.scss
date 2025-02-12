@@ -1,0 +1,162 @@
+.importWayContainer {
+  width: 100%;
+  height: 100%;
+  padding-top: 90vpx;
+
+  .main {
+    width: 100%;
+    min-height: calc(100% - 90vpx);
+    background-color: #fff;
+
+    .title {
+      font-family: PingFangSC, PingFang SC;
+      font-weight: 400;
+      font-size: 20vpx;
+      color: #1E1E69;
+      line-height: 28vpx;
+      height: 90vpx;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 170vpx;
+      margin-right: 40vpx;
+      border-bottom: 1px solid #E0E0E0;
+
+      .titleLeft {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 400;
+        font-size: 20vpx;
+        color: #1E1E69;
+        line-height: 28vpx;
+      }
+
+      .exitBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100vpx;
+        height: 40vpx;
+        background: #000AFF;
+        border-radius: 20vpx;
+        border: 1px solid #0A14D2;
+
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 600;
+        font-size: 18vpx;
+        color: #FFFFFF;
+        cursor: pointer;
+      }
+
+    }
+
+    .content {
+      width: 100%;
+      box-sizing: border-box;
+      padding-left: 295vpx;
+      padding-right: 295vpx;
+      padding-top: 120vpx;
+
+      .contentTitle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 46vpx;
+
+        .titleText {
+          font-family: PingFangSC, PingFang SC;
+          font-weight: 600;
+          font-size: 40vpx;
+          color: #000000;
+          line-height: 56vpx;
+          margin-bottom: 50vpx;
+        }
+
+        .continueBtn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          width: 156vpx;
+          height: 50vpx;
+          background: #000AFF;
+          border-radius: 2vpx;
+          border: 1px solid #0A14D2;
+
+          font-family: PingFangSC, PingFang SC;
+          font-weight: 400;
+          font-size: 20vpx;
+          color: #FFFFFF;
+          cursor: pointer;
+        }
+      }
+
+      .wayWrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .wayBox {
+          width: 390vpx;
+          height: 200vpx;
+          background-color: #fff;
+          border-radius: 10vpx;
+          border: 1px solid #E0E0E0;
+          box-sizing: border-box;
+          padding-left: 38vpx;
+          padding-right: 38vpx;
+          padding-top: 33vpx;
+          cursor: pointer;
+
+          &.active {
+            background: #F5F5FE;
+            border: 1px solid #000AFF;
+          }
+
+          .radioBox {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30vpx;
+
+            .icon {
+              width: 22vpx;
+              height: 24vpx;
+            }
+
+            .radio {
+              width: 24vpx;
+              height: 24vpx;
+            }
+          }
+
+          .explain {
+            font-family: PingFangSC, PingFang SC;
+            font-weight: 400;
+            font-size: 24vpx;
+            color: #000000;
+            line-height: 33vpx;
+            margin-bottom: 20vpx;
+          }
+
+          .sample {
+            font-family: PingFangSC, PingFang SC;
+            font-weight: 600;
+            font-size: 20vpx;
+            color: #7241FF;
+            line-height: 28vpx;
+            text-decoration: none;
+          }
+        }
+        .wayBox:hover{
+          background-color: #F5F5FF;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 鼠标悬停时增加阴影 */
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cusob.mapper.TemplateMapper">
+
+
+    <select id="getFolderList" resultType="java.lang.String">
+        SELECT DISTINCT template.folder from template
+    </select>
+
+    <select id="getPrivateFolderList" resultType="java.lang.String">
+        SELECT DISTINCT template.folder from template where ( user_id = #{user_id} AND is_deleted = 0)
+    </select>
+
+    <select id="getPublicFolderList" resultType="java.lang.String">
+        SELECT DISTINCT template.folder from template where ( is_customized = 0 AND is_deleted = 0)
+    </select>
+
+
+
+
+</mapper>

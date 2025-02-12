@@ -1,0 +1,129 @@
+.feature4Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 950vpx;
+  background-color: #F5F5FE;
+  .title {
+    margin-top: 100vpx;
+    margin-bottom: 147vpx;
+    width: 1131vpx;
+    height: 88vpx;
+    font-family: Arial, Arial;
+    font-weight: 600;
+    font-size: 40vpx;
+    color: #333333;
+    line-height: 45vpx;
+    text-align: center;
+  }
+  
+  .items {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 136vpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 96vpx;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 350vpx;
+  
+      .imgBox0 {
+        width: 130vpx;
+        height: 130vpx;
+        margin-bottom: 70vpx;
+      }
+  
+      .imgBox1 {
+        width: 95vpx;
+        height: 130vpx;
+        margin-bottom: 70vpx;
+      }
+  
+      .imgBox2 {
+        width: 130vpx;
+        height: 130vpx;
+        margin-bottom: 70vpx;
+      }
+  
+      .text {
+        width: 100%;
+        font-family: Arial Bold;
+        font-weight: 600;
+        font-size: 28vpx;
+        color: #000;
+        text-align: center;
+        margin-bottom: 0.8em;
+      }
+
+      .subText {
+        width: 100%;
+        font-size: Arial;
+        font-size: 20vpx;
+        color: #000;
+        text-align: center;
+      }
+    }
+
+  }
+
+  .tooltip {
+    :global {
+      .ant-tooltip {
+        --antd-arrow-background-color: #fff;
+        z-index: 999;
+        .ant-tooltip-arrow {
+        }
+        .ant-tooltip-content {
+          width: 611vpx;
+          height: 69vpx;
+          .ant-tooltip-inner {
+            background-color: #fff;
+          }
+        }
+  
+        .more {
+          background: #FFFFFF;
+          border-radius: 6vpx;
+          font-family: PingFangSC, PingFang SC;
+          font-weight: 400;
+          font-size: 20vpx;
+          color: #727171;
+        }
+      }
+    }
+  }
+
+  .signUp {
+    position: relative;
+    width: 400vpx;
+    height: 60vpx;
+    background: #7241FF;
+    border-radius: 30vpx;
+    border: 1px solid #0A14D2;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 25vpx;
+    font-family: Arial, Arial;
+    font-weight: 600;
+    font-size: 25vpx;
+    color: #FFFFFF;
+    cursor: pointer;
+
+    .signUpArrow {
+      width: 20vpx;
+      height: 20vpx;
+      position: absolute;
+      z-index: 10;
+      top: 50%;
+      right: 17vpx;
+      transform: translateY(-50%);
+    }
+  }
+}

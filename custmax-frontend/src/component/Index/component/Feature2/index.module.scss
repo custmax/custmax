@@ -1,0 +1,123 @@
+.feature2Container {
+  display: flex;
+  width: 100%;
+  height: 900vpx;
+  display: flex;
+  flex-direction: column;
+  padding-left: 262vpx;
+  background-color: #fff;
+  position: relative;
+
+  .title {
+    width: 832vpx;
+    height: 132vpx;
+    font-family: Arial, Arial;
+    font-weight: 600;
+    font-size: 40vpx;
+    color: #333333;
+    line-height: 45vpx;
+    margin-top: 148vpx;
+    margin-bottom: 60vpx;
+  }
+
+  .subTitle {
+    width: 670vpx;
+    line-height: 30vpx;
+    white-space: wrap;
+    margin-bottom: 60vpx;
+
+    &:nth-last-of-type(1) {
+      margin-bottom: 70vpx;
+    }
+
+    .label {
+      font-family: Arial Bold;
+      font-weight: 600;
+      font-size: 20vpx;
+    }
+
+    .value {
+      font-family: Arial;
+      font-size: 20vpx;
+    }
+  }
+
+  .tooltip {
+    :global {
+      .ant-tooltip {
+        --antd-arrow-background-color: #fff;
+        .ant-tooltip-arrow {
+        }
+        .ant-tooltip-content {
+          width: 611vpx;
+          height: 69vpx;
+          .ant-tooltip-inner {
+            background-color: #fff;
+          }
+        }
+
+        .more {
+          background: #FFFFFF;
+          border-radius: 6vpx;
+          font-family: PingFangSC, PingFang SC;
+          font-weight: 400;
+          font-size: 20vpx;
+          color: #727171;
+        }
+      }
+    }
+  }
+
+  .link {
+    display: inline-block;
+    width: 326vpx;
+  }
+
+  .signUp {
+    position: relative;
+    width: 326vpx;
+    height: 50vpx;
+    background: #000AFF;
+    border-radius: 25vpx;
+    border: 1px solid #0A14D2;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 25vpx;
+
+    font-family: Arial, Arial;
+    font-weight: 600;
+    font-size: 20vpx;
+    color: #FFFFFF;
+    cursor: pointer;
+
+    .signUpArrow {
+      width: 20vpx;
+      height: 20vpx;
+      position: absolute;
+      z-index: 10;
+      top: 50%;
+      right: 15vpx;
+      transform: translateY(-50%);
+    }
+  }
+
+  .imgBg0 {
+    position: absolute;
+    z-index: 10;
+    width: 407vpx;
+    height: 543vpx;
+    background: #000AFF;
+    top: 237vpx;
+    right: 262vpx;
+  }
+
+  .imgBg1 {
+    position: absolute;
+    z-index: 20;
+    width: 407vpx;
+    height: 543vpx;
+    top: 202vpx;
+    right: 296vpx;
+  }
+}

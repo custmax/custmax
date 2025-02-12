@@ -1,0 +1,551 @@
+.campaignEditorContainer {
+  width: 100%;
+  height: 100%;
+  padding-top: 90vpx;
+
+  .main {
+    width: 100%;
+    min-height: calc(100% - 90vpx);
+    background-color: #fff;
+    padding-bottom: 80vpx;
+
+    .title {
+      font-family: PingFangSC, PingFang SC;
+      font-weight: 400;
+      font-size: 20vpx;
+      color: #1E1E69;
+      line-height: 28vpx;
+      height: 90vpx;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 170vpx;
+      margin-right: 40vpx;
+      border-bottom: 1px solid #E0E0E0;
+      .sendWrapper {
+        width: 400vpx;
+        display: flex;
+        justify-content: center;
+        margin-top: 4vpx;
+
+        .sendBtn {
+          width: 120vpx;
+          height: 40vpx;
+          background: #7241FF;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: PingFangSC, PingFang SC;
+          font-weight: 600;
+          font-size: 14vpx;
+          color: #FFFFFF;
+          cursor: pointer;
+          border-radius: 20vpx;
+          margin-left: 24vpx;
+          margin-right: 24vpx;
+        }
+        .sendBtn2 {
+          width: 160vpx;
+          height: 40vpx;
+          //background: #7241FF;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: PingFangSC, PingFang SC;
+          font-weight: 600;
+          font-size: 14vpx;
+          color: #7241FF;
+          cursor: pointer;
+          border-radius: 20vpx;
+          margin-left: 48vpx;
+        }
+      }
+      .titleLeft {
+        height: 100%;
+        display: flex;
+        align-items: center;
+       // background-color: pink;
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 400;
+        font-size: 20vpx;
+        color: #1E1E69;
+        line-height: 28vpx;
+        cursor: pointer;
+
+        .back {
+          display: flex;
+          align-items: center;
+
+          .arrowLeft {
+            width: 20vpx;
+            height: 20vpx;
+            margin-right: 0.5em;
+          }
+
+        }
+  
+        .draftBtn {
+          width: 70vpx;
+          height: 36vpx;
+          background: #FFFFFF;
+          border-radius: 2vpx;
+          border: 1px solid #000AFF;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: PingFangSC, PingFang SC;
+          font-weight: 400;
+          font-size: 20vpx;
+          color: #000AFF;
+          margin-left: 1em;
+        }
+      }
+
+      .exitBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100vpx;
+        height: 40vpx;
+        background: #000AFF;
+        border-radius: 20vpx;
+        border: 1px solid #0A14D2;
+
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 600;
+        font-size: 18vpx;
+        color: #FFFFFF;
+        cursor: pointer;
+      }
+
+    }
+
+    .content {
+      width: 100%;
+      box-sizing: border-box;
+      padding-left: 210vpx;
+      padding-right: 210vpx;
+
+      .contentTitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 160vpx;
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 600;
+        font-size: 30vpx;
+        color: #666666;
+        .campaignTitle{
+            font-family: PingFangSC, PingFang SC;
+            font-weight: 600;
+            font-size: 30vpx;
+            color: #666666;
+            //margin-bottom: 20vpx;
+        }
+        .subTitle {
+          width: 30%;
+          height: 50vpx;
+          font-family: PingFangSC, PingFang SC;
+          font-weight: 400;
+          font-size: 14vpx;
+          color: #000AFF;
+          cursor: pointer;
+          text-decoration: underline;
+          margin-top: 20vpx; // 调整与输入框之间的距离
+          display: block;
+        }
+        input {
+          display: block;
+          width: 100%; // 确保输入框占据整行宽度
+          margin-top: 10vpx;
+        }
+      }
+
+
+      .mainProcess {
+        .processItem {
+          width: 100%;
+          height: 100vpx;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          box-sizing: border-box;
+          padding-left: 40vpx;
+          padding-right: 90vpx;
+
+          &:nth-of-type(even) {
+            background-color: #FCFCFF;
+          }
+
+          .processLeft {
+            display: flex;
+
+            .radio {
+              margin-top: 4vpx;
+              width: 24vpx;
+              height: 24vpx;
+            }
+
+            .processDesc {
+              display: flex;
+              flex-direction: column;
+              font-family: PingFangSC, PingFang SC;
+              font-weight: 600;
+              font-size: 20vpx;
+              color: #666666;
+
+              .desc {
+                font-family: PingFangSC, PingFang SC;
+                font-weight: 400;
+                font-size: 18vpx;
+                color: #000AFF;
+                text-decoration: underline;
+              }
+            }
+          }
+
+          .processRight {
+            width: 100vpx;
+            height: 40vpx;
+            background: #7241FF;
+            border-radius: 20vpx;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: PingFangSC, PingFang SC;
+            font-weight: 600;
+            font-size: 14vpx;
+            color: #FFFFFF;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .trackWrapper {
+        border-bottom: 1px solid #F5F5FE;
+
+        .trackTitle {
+          font-family: PingFangSC, PingFang SC;
+          font-weight: 600;
+          font-size: 30vpx;
+          color: #666666;
+          padding-bottom: 40vpx;
+          padding-top: 60vpx;
+        }
+        
+        .trackList {
+          width: 100%;
+          .trackItem {
+            height: 100vpx;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            padding-left: 44vpx;
+          }
+
+          .trackText {
+            font-family: PingFangSC, PingFang SC;
+            font-weight: 600;
+            font-size: 20vpx;
+            color: #666666;
+            padding-left: 30vpx;
+          }
+        }
+      }
+
+      .sendWrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 44vpx;
+
+        .sendBtn {
+          width: 160vpx;
+          height: 40vpx;
+          background: #7241FF;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: PingFangSC, PingFang SC;
+          font-weight: 600;
+          font-size: 20vpx;
+          color: #FFFFFF;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.toModal {
+
+  :global {
+    .ant-modal {
+      .ant-modal-content {
+        .ant-modal-header {
+          .ant-modal-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: PingFangSC, PingFang SC;
+            font-weight: 600;
+            font-size: 28vpx;
+            color: #333333;
+          }
+        }
+      }
+    }
+  }
+
+  .toContent {
+    display: flex;
+    justify-content: center;
+    padding-top: 30vpx;
+    padding-bottom: 30vpx;
+
+    .label {
+      font-family: PingFangSC, PingFang SC;
+      font-weight: 600;
+      font-size: 20vpx;
+      color: #666666;
+      padding-right: 44vpx;
+    }
+
+    .value {
+      font-family: PingFangSC, PingFang SC;
+      font-weight: 400;
+      font-size: 18vpx;
+      color: #666666;
+      display: flex;
+      flex-direction: column;
+
+      > span {
+        margin-top: 10vpx;
+      }
+    }
+
+  }
+  .addGroup {
+    display: block;
+    //background-color: pink;
+    width: 220vpx;
+    //padding-top: 20vpx;
+    margin-left: 60vpx;
+    font-family: PingFangSC, PingFang SC;
+    font-weight: 400;
+    font-size: 16vpx;
+    color: #000AFF;
+    line-height: 22vpx;
+    text-decoration: underline;
+  }
+
+}
+
+.fromModal {
+  :global {
+    .ant-modal {
+      .ant-modal-content {
+        .ant-modal-header {
+          .ant-modal-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: PingFangSC, PingFang SC;
+            font-weight: 600;
+            font-size: 28vpx;
+            color: #333333;
+          }
+        }
+      }
+    }
+  }
+  .fromContent {
+    padding-bottom: 30vpx;
+
+    .inputItem {
+      display: flex;
+      align-items: center;
+      margin-top: 40vpx;
+
+      .label {
+        flex: 1;
+        text-align: right;
+        padding-right: 20vpx;
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 600;
+        font-size: 20vpx;
+        color: #666666;
+        line-height: 28vpx;
+        white-space: nowrap;
+      }
+
+      .value {
+        width: 380vpx;
+        height: 50vpx;
+      }
+    }
+
+    .addSender {
+      width: 100vpx;
+      height: 30vpx;
+      line-height: 30vpx;
+      //background-color: black;
+      display: block;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30vpx;
+      padding-left: 0vpx;
+      font-family: PingFangSC, PingFang SC;
+      font-weight: 400;
+      font-size: 16vpx;
+      color: #7214FF;
+      line-height: 22vpx;
+      text-decoration: underline;
+    }
+  }
+}
+
+.subjectModal {
+  :global {
+    .ant-modal {
+      .ant-modal-content {
+        .ant-modal-header {
+          .ant-modal-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: PingFangSC, PingFang SC;
+            font-weight: 600;
+            font-size: 28vpx;
+            color: #333333;
+          }
+        }
+      }
+    }
+  }
+  .subjectContent {
+    padding-bottom: 30vpx;
+
+    .inputItem {
+      display: flex;
+      align-items: center;
+      margin-top: 40vpx;
+
+      .label {
+        flex: 1;
+        text-align: right;
+        padding-right: 44vpx;
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 600;
+        font-size: 20vpx;
+        color: #666666;
+        line-height: 28vpx;
+        white-space: nowrap;
+      }
+
+      .value {
+        width: 380vpx;
+        height: 50vpx;
+      }
+    }
+  }
+}
+
+.sendModal {
+
+  :global {
+    .ant-modal {
+      .ant-modal-content {
+        width: 770vpx;
+        padding-left: 56vpx;
+        .ant-modal-header {
+          .ant-modal-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: PingFangSC, PingFang SC;
+            font-weight: 600;
+            font-size: 28vpx;
+            color: #333333;
+          }
+        }
+      }
+    }
+  }
+
+  .sendContent {
+    padding-top: 33vpx;
+
+    .header {
+      display: flex;
+
+      .headerLeft {
+        width: 110vpx;
+        height: 120vpx;
+        margin-right: 34vpx;
+      }
+
+      .headerRight {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 400;
+        font-size: 18vpx;
+        color: #333333;
+        line-height: 25vpx;
+        margin-right: 34vpx;
+
+        .headerTitle {
+          font-family: PingFangSC, PingFang SC;
+          font-weight: 600;
+          font-size: 38vpx;
+          color: #333333;
+          line-height: 53vpx;
+          padding-bottom: 18vpx;
+        }
+
+        .headerContent {
+          width: 511vpx;
+        }
+      }
+    }
+
+    .radioWrapper {
+      margin-top: 44vpx;
+      display: flex;
+      align-items: center;
+
+      .radioLabel {
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 400;
+        font-size: 20vpx;
+        color: #000000;
+        line-height: 28vpx;
+        margin-right: 34vpx;
+      }
+    }
+
+    .timeWrapper {
+      margin-top: 44vpx;
+      display: flex;
+      align-items: center;
+
+      .timeLabel {
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 400;
+        font-size: 20vpx;
+        color: #000000;
+        line-height: 28vpx;
+        margin-right: 30vpx;
+      }
+
+      .timeInput {
+        margin-right: 10vpx;
+      }
+    }
+  }
+
+}

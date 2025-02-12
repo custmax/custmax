@@ -1,0 +1,26 @@
+.header{
+  text-align: center;
+}
+.container {
+  margin-top: 20vpx;
+  padding-left: 200vpx;
+  padding-right: 200vpx;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 自适应列宽 */
+  gap: 10vpx;
+  border-bottom: 1px solid #BCBAB8;
+}
+.column {
+  flex: 1;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+
+.item{
+  margin-top: 10vpx;
+  margin-bottom: 8vpx;
+}
+.item a{
+  color: blue;
+}

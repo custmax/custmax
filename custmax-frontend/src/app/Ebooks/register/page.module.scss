@@ -1,0 +1,106 @@
+.emailListContainer{
+  width: 100%;
+  height: 100%;
+  padding-top: 90vpx;
+
+  .main{
+    width: 100%;
+    min-height: calc(100% - 90vpx);
+    background-color: #fff;
+    padding-bottom: 28vpx;
+    padding-left: 170vpx;
+    padding-right: 380vpx;
+    box-sizing: border-box;
+
+    .containerHeader {
+      display: flex;
+      justify-content: space-between;
+
+      .title {
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 400;
+        font-size: 20vpx;
+        color: #1E1E69;
+        line-height: 28vpx;
+        height: 90vpx;
+        display: flex;
+        align-items: center;
+        //border-bottom: 1px solid #E0E0E0;
+      }
+
+      .addSender{
+        margin-top: auto;
+        margin-bottom: auto;
+
+        .buttonAdd{
+          height: 50vpx;
+          width: 120vpx;
+          background: #000AFF;
+          border-radius: 5vpx;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: ArialMT;
+          font-size: 18vpx;
+          color: #FFFFFF;
+          cursor: pointer;
+        }
+      }
+    }
+
+    }
+
+
+
+  .domainBox{
+    width: 320vpx;
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    top: 90vpx;
+    box-sizing: border-box;
+    padding-left: 27vpx;
+    padding-right: 40vpx;
+    border-left: 1px solid #E0E0E0;
+    min-height: calc(100% - 90vpx);
+
+    .title {
+      width: 100%;
+      height: 98vpx;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #E0E0E0;
+      font-family: PingFangSC, PingFang SC;
+      font-weight: 600;
+      font-size: 20vpx;
+      color: #333333;
+    }
+
+    .domainTitle{
+      margin-top: 20vpx;
+      font-family: PingFangSC, PingFang SC;
+      font-weight: 400;
+      font-size: 24vpx;
+      color: #333333;
+      line-height: 33vpx;
+    }
+
+    .domainItem{
+      margin-top: 20vpx;
+      font-family: PingFangSC, PingFang SC;
+      font-weight: 400;
+      font-size: 20vpx;
+      color: #1E1E69;
+      line-height: 28vpx;
+      cursor: pointer;
+
+      &.active {
+        color: #000AFF;
+      }
+
+    }
+
+
+
+  }
+}

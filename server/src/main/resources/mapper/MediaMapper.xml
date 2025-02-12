@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cusob.mapper.MediaMapper">
+
+
+    <select id="pageQueryByUserId" resultType="com.cusob.vo.MediaVo">
+        SELECT media.id, media.file_name, media.create_time, user.first_name, user.last_name
+        from media join user on media.user_id = user.id
+        where media.user_id = #{userId} and media.is_deleted = 0
+        <if test="type != null and type != ''">
+            and media.type = #{type}
+        </if>
+        <if test="keyword != null and keyword != ''">
+            and media.file_name like
+            concat('%', #{keyword}, '%')
+        </if>
+    </select>
+
+    <select id="pageQueryByCompanyId" resultType="com.cusob.vo.MediaVo">
+        SELECT media.id, media.file_name, media.create_time, user.first_name, user.last_name
+        from media join user on media.user_id = user.id
+        where media.company_id = #{companyId} and media.is_deleted = 0
+        <if test="type != null and type != ''">
+            and media.type = #{type}
+        </if>
+        <if test="keyword != null and keyword != ''">
+            and media.file_name like
+            concat('%', #{keyword}, '%')
+        </if>
+    </select>
+</mapper>

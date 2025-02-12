@@ -1,0 +1,81 @@
+.signContainer {
+  display: flex;
+  align-items: center;
+  //width: 159vpx;
+  //height: 26vpx;
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 400;
+  font-size: 19vpx;
+  color: #333333;
+  line-height: 26vpx;
+  cursor: pointer;
+  padding-right:100vpx;
+  margin-right:-120vpx;
+  justify-content: space-between;
+  .login{
+    position: relative;
+    width: 100vpx;
+    height: 50vpx;
+    background: #FFFFFF;
+    //box-shadow: 0px 3px 5px 1px #222B8A;
+    border-radius: 30px 30px 30px 30px;
+
+    //border: 1px solid #7241FF;
+    //border: 1px solid rgba(#7241FF,0.3);
+    //border: 1px solid #0A14D2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    //padding-left: 25vpx;
+
+    font-family: Source Han Sans;
+    font-size: 20vpx;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+  }
+  .start{
+    position: relative;
+    width: 240vpx;
+    height: 50vpx;
+    background: #7241FF;
+    box-shadow: 0px 3px 5px 1px #222B8A;
+    border-radius: 30px 30px 30px 30px;
+
+    //border: 1px solid #7241FF;
+    border: 1px solid rgba(#7241FF,0.3);
+    //border: 1px solid #0A14D2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    //padding-left: 25vpx;
+
+    font-family: Source Han Sans;
+    font-size: 20vpx;
+    font-weight: bold;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  //.division {
+  //  position: relative;
+  //  width: 260vpx;
+  //  height: 60vpx;
+  //  background: #7241FF;
+  //  box-shadow: 0px 3px 5px 0px #222B8A;
+  //  border-radius: 30px 30px 30px 30px;
+  //  //border: 1px solid #0A14D2;
+  //  display: flex;
+  //  align-items: center;
+  //  justify-content: center;
+  //  box-sizing: border-box;
+  //  //padding-left: 25vpx;
+  //
+  //  font-family: Source Han Sans;
+  //  font-size: 20vpx;
+  //  font-weight: bold;
+  //  color: #FFFFFF;
+  //  cursor: pointer;
+  //}
+}

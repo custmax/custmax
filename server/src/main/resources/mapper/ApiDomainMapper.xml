@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cusob.mapper.ApiDomainMapper">
+
+
+    <select id="selectDomainByname" resultType="com.cusob.entity.ApiDomain">
+        select user_id,status,spf_domain,spf_value,dkim_domain,dkim_value,mx_domain,mx_value
+        from api_domain
+        where domain = #{domain} and user_id = #{userId}
+    </select>
+</mapper>

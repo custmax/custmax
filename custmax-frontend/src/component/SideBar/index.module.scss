@@ -1,0 +1,112 @@
+.sideBarContainer {
+  position: fixed;
+  left: 0;
+  //z-index: 10;
+  top: 90vpx;
+  width: 130vpx;//改变侧边栏宽度
+  background: #7241FF;
+  //border-radius: 0px 37vpx 37vpx 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  height:100%;
+  //max-height: calc(100% - 90vpx);
+  //overflow: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollWrapper {
+    //padding-top: 60vpx;
+    //padding-bottom: 60vpx;
+    width: 130vpx;
+    overflow-y: auto;
+    scrollbar-width: none; /* 对于Firefox */
+    -ms-overflow-style: none;  /* 对于IE和Edge */
+    //background-color: pink;
+    .generateButton{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 20vpx;
+      padding-top: 20vpx;
+      cursor: pointer;
+      transition: background-color 0.3s ease; /* 添加过渡效果 */
+      &:nth-last-of-type(1) {
+        margin-bottom: 0;
+      }
+      &:hover {
+        background-color: lighten(#7241FF, 10%); /* 鼠标悬停时颜色加深 */
+      }
+
+      .barIcon {
+        width: 33vpx;
+        height: 24vpx;
+        margin-bottom: 25vpx;
+      }
+
+      .barText {
+        font-family: Arial, Arial;
+        font-weight: normal;
+        font-size: 14vpx;
+        color: #FFFFFF;
+        line-height: 16vpx;
+        &.active {
+          font-weight: 600;
+          color: #7241FF;
+          background-color: #F1F1FE;
+        }
+      }
+    }
+    .barItem {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 20vpx;
+      padding-top: 20vpx;
+      cursor: pointer;
+      transition: background-color 0.3s ease; /* 添加过渡效果 */
+      &:nth-last-of-type(1) {
+        margin-bottom: 0;
+      }
+      &:hover {
+        background-color: lighten(#7241FF, 10%); /* 鼠标悬停时颜色加深 */
+      }
+      &.active {
+        font-weight: 600;
+        color: #7241FF;
+        background-color: #F1F1FE;
+      }
+  
+      .barIcon {
+        width: 33vpx;
+        height: 24vpx;
+        margin-bottom: 25vpx;
+      }
+
+      .senderIcon {
+        width: 33vpx;
+        height: 33vpx;
+        margin-bottom: 25vpx;
+      }
+  
+      .barText {
+        font-family: Arial, Arial;
+        font-weight: normal;
+        font-size: 14vpx;
+        color: #FFFFFF;
+        line-height: 16vpx;
+        //&.active {
+        //  font-weight: 600;
+        //  color: #7241FF;
+        //  background-color: #F1F1FE;
+        //}
+      }
+    }
+
+  }
+}

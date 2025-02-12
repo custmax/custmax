@@ -1,0 +1,78 @@
+.homeContainer {
+  width: 100%;
+  height: 100%;
+  padding-top: 90vpx;
+}
+.cookiecontainer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #333333;
+  z-index: 999;
+  .cookiealert {
+    background-color: #333333;
+
+      padding: 30vpx 200vpx;
+    height: 120vpx;
+    border-top: 1vpx solid #f0f0f0;
+    box-shadow: 0vpx -2vpx 10vpx rgba(0, 0, 0, 0.1);
+    border-radius: 5vpx;
+    .cookietext{
+      font-size: 15vpx;
+      color: #f0f0f0;
+    }
+    .buttons_container{
+
+      width: 100%;
+      height: 90vpx;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 92%;
+      left: 45%;
+      max-width: 550vpx;
+      right: 30%;
+      button {
+        background-color: #7241FF;
+        color: #fff; /* 白色文本 */
+        border: none;
+        font-size: 15vpx;
+        padding: 5vpx 10vpx;
+        border-radius: 20vpx;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto; /* 水平居中 */
+
+      }
+      .button_gray {
+        color: #FFFFF7;
+        border: none;
+        font-size: 15vpx;
+        padding: 5vpx 10vpx;
+        border-radius: 20vpx;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto; /* 水平居中 */
+        background-color: #52525C; /* 蓝色背景 */
+      }
+
+      .button_black {
+      color: #FFFFF7;
+      border: none;
+      font-size: 15vpx;
+      padding: 5vpx 10vpx;
+      border-radius: 20vpx;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto; /* 水平居中 */
+      background-color: #333333; /* 蓝色背景 */
+    }
+    }
+
+  }
+}
+

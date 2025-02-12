@@ -1,0 +1,226 @@
+.userListContainer {
+  width: 100%;
+  height: 100%;
+  padding-top: 90vpx;
+
+  .main {
+    width: 100%;
+    min-height: calc(100% - 90vpx);
+    background-color: #fff;
+    padding-bottom: 28vpx;
+
+    .title {
+      height: 90vpx;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 170vpx;
+      margin-right: 40vpx;
+      border-bottom: 1px solid #E0E0E0;
+      box-sizing: border-box;
+
+      .titleLeft {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 400;
+        font-size: 20vpx;
+        color: #1E1E69;
+        line-height: 28vpx;
+      }
+
+
+    }
+
+    .content {
+      width: 100%;
+      box-sizing: border-box;
+      margin-left: 100vpx;
+      //padding-right: 535vpx;
+      //padding-top: 80vpx;
+      //padding-bottom: 112vpx;
+      justify-items: center;
+
+      .addgroupItem {
+        margin-top: 20vpx;
+        margin-left: -10vpx;
+        width: 190vpx;
+        height: 50vpx;
+        justify-content: center;
+        padding-top: 10vpx;
+        padding-left: 15vpx;
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 400;
+        font-size: 20vpx;
+        color: #1E1E69;
+        background-color: #7241FF;
+        border-radius: 30vpx;
+        line-height: 28vpx;
+        cursor: pointer;
+        text-decoration: none;
+
+
+        &:nth-last-of-type(3) {
+          color: white;
+          text-decoration: underline;
+          padding-bottom: 20vpx;
+          //border-bottom: 1px solid #E0E0E0;
+          text-decoration: none;
+          //border-bottom: 1px solid #E0E0E0;
+        }
+      }
+
+      .operateBox {
+        height: 100%;
+        display: flex;
+        padding-right: 100vpx;
+        //align-items: center;
+        //取消按钮
+        //.cancelBtn {
+        //  width: 100vpx;
+        //  height: 40vpx;
+        //  background: #F5F8FF;
+        //  border-radius: 20vpx;
+        //  border: 1px solid #E7ECF7;
+        //  display: flex;
+        //  align-items: center;
+        //  justify-content: center;
+        //
+        //  font-family: PingFangSC, PingFang SC;
+        //  font-weight: 400;
+        //  font-size: 18vpx;
+        //  color: #333333;
+        //  margin-right: 20vpx;
+        //  cursor: pointer;
+        //}
+        .saveBtn {
+          width: 150vpx;
+          height: 40vpx;
+          background: #7241FF;
+          border-radius: 20vpx;
+          border: 1px solid #0A14D2;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          //margin-left: 600vpx;
+          font-family: PingFangSC, PingFang SC;
+          font-weight: 600;
+          font-size: 18vpx;
+          color: #FFFFFF;
+          cursor: pointer;
+        }
+      }
+
+      .avatarUploader {
+        padding-left: 20%;
+        margin-top: 30vpx;
+        margin-bottom: 30vpx;
+
+        .avatarImg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .contactForm {
+        justify-items: center;
+
+        :global {
+
+          .ant-form-item {
+            .ant-form-item-row {
+              .ant-form-item-label {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                > label {
+                  font-family: PingFan gSC, PingFang SC;
+                  font-weight: 600;
+                  font-size: 20vpx;
+                  color: #666666;
+                }
+              }
+
+              .ant-form-item-control {
+                width: 100%;
+
+                .ant-form-item-control-input {
+                  width: 100%;
+
+                  .ant-form-item-control-input-content {
+                    width: 1000vpx;
+                  }
+                  min-height: 50vpx;
+                }
+
+              }
+            }
+          }
+        }
+
+        .changeBtn {
+          height: 50vpx;
+          width: 240vpx;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: Arial;
+          font-size: 18vpx;
+          color: #FFFFFF;
+          background-color: #000AFF;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .groupModal {
+    :global {
+      .ant-modal {
+        .ant-modal-content {
+          .ant-modal-header {
+            .ant-modal-title {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-family: PingFangSC, PingFang SC;
+              font-weight: 600;
+              font-size: 28vpx;
+              color: #333333;
+            }
+          }
+        }
+      }
+    }
+
+    .groupContent {
+      padding-bottom: 30vpx;
+
+      .inputItem {
+        display: flex;
+        align-items: center;
+        margin-top: 40vpx;
+
+        .label {
+          flex: 1;
+          text-align: right;
+          padding-right: 44vpx;
+          font-family: PingFangSC, PingFang SC;
+          font-weight: 600;
+          font-size: 20vpx;
+          color: #666666;
+          line-height: 28vpx;
+          white-space: nowrap;
+        }
+
+        .value {
+          width: 380vpx;
+          height: 50vpx;
+        }
+      }
+    }
+  }
+}

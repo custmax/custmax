@@ -1,0 +1,293 @@
+.priceListContainer {
+  //width: 100%;
+  height: 1174vpx;
+  padding: 0 80vpx;
+  padding-top: 94vpx;
+  margin-top: 60vpx;
+  box-sizing: border-box;
+  position: relative;
+  //display: flex;
+  /* 添加这些样式到你的CSS文件中 */
+  .timeSelector {//时间选择器
+    width: 320vpx;
+    height:60vpx;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 30px 30px 30px 30px;
+    border-shadow: 5px 3px 5px 0px black;
+    display: flex;
+    background-color: #F5F5FE;
+    margin:0 auto;
+    //margin-bottom: 100vpx;
+    .month{
+      //margin-left:700vpx;
+      //padding-top: 0vpx;
+      //margin-top: 0vpx;
+    }
+    .year{
+      //position: absolute;
+      //top:-10vpx;
+      //margin-left:900vpx;
+      //padding-top: 104vpx;
+      //margin-top: 0vpx;
+    }
+  }
+
+  .buttonselected {
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    display: flex;
+    width: 152vpx;
+    height: 50vpx;
+    background: #7241FF;
+    //box-shadow: 0px 3px 5px 0px #222B8A;
+    border-radius: 30px 30px 30px 30px;
+    font-family: Source Han Sans;
+    font-size: 24vpx;
+    font-weight: bold;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+
+  .button:not(.selected) {
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    display: flex;
+    width: 152vpx;
+    height: 50vpx;
+    background: #F5F5FE;
+    //box-shadow: 0px 3px 5px 0px #222B8A;
+    border-radius: 30px 30px 30px 30px;
+    font-family: Source Han Sans;
+    font-size: 24vpx;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+  }
+  .filterBox {
+    width: 100%;
+    height:80vpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //background-color: yellow;
+    margin-top:20vpx;
+    padding-right:100vpx;
+    :global {
+      .ant-select {
+        font-size: 14vpx;
+        .ant-select-selector {
+          border-radius: 0 20px 20px 0;
+          font-size: 20vpx;
+          background: white;
+          padding-left: 14vpx;
+          border: 1px solid #BCBAB8;
+          .ant-select-selection-item {
+            padding-inline-end: 0;
+            line-height: normal;
+          } 
+        }
+      }
+    }
+
+    .left {
+      display: flex;
+      margin-right: 900vpx;
+      .label {
+        width: 240vpx;
+        height: 50vpx;
+        background: #F5F5FE;
+        border-radius: 20vpx 0 0 20vpx;
+        //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border: 1px solid #BCBAB8;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        padding-left: 20vpx;
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 400;
+        font-size: 20vpx;
+        color: #333333;
+      }
+
+      .value {
+        width: 130vpx;
+        height: 50vpx;
+        background: #FFFFFF;
+
+        //font-size:50vpx;
+        //border-radius: 20vpx 0 0 20vpx;
+        //border-radius: 0vpx 20vpx 20vpx 0;
+        .numSelector {
+          width: 100%;
+          height: 100%;
+          //background-color: yellow;
+          //font-size:50vpx;
+          //border-radius: 0vpx 20vpx 20vpx 0;
+          //border-radius: 20vpx 0 0 20vpx;
+        }
+      }
+    }
+
+    //.timeSelector{
+    //  width: 200vpx;
+    //  height: 50vpx;
+    //  background: #FFFFFF;
+    //
+    //  .currencySelector {
+    //    width: 100%;
+    //    height: 100%;
+    //  }
+    //}
+
+    .right {
+      width: 300vpx;
+      height: 50vpx;
+      background: #FFFFFF;
+      display: flex;
+      padding-left: 100vpx;
+      .label{
+        width: 100vpx;
+        height: 50vpx;
+        font-size: 20vpx;
+        line-height: 36vpx;
+        font-weight: 600;
+        font-family: Arial, Arial;
+      }
+      .currencySelector {
+        width: 100vpx;
+        height: 36vpx;
+      }
+    }
+  }
+
+  .priceCardList {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50vpx;
+    //background-color: black;
+    //border-radius: 100px 30px 0 0;
+    .priceCard {
+      width: 410vpx;
+      height: 820vpx;
+      background: #F5F5FE;
+      border-radius: 50vpx;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border: 1px solid #E0E0E0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .title {
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 600;
+        font-size: 42vpx;
+        color: #666666;
+        margin-top: 26vpx;
+        margin-bottom: 16vpx;
+      }
+
+      .moneyBox {
+        display: flex;
+
+        .label {
+          font-family: PingFangSC, PingFang SC;
+          font-weight: 600;
+          font-size: 24vpx;
+          color: #666666;
+          margin-right: 2px;
+        }
+
+        .value {
+          font-family: PingFangSC, PingFang SC;
+          font-weight: 600;
+          font-size: 50vpx;
+          color: #666666;
+          margin-top: -13vpx;
+        }
+      }
+
+      .tip {
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 400;
+        font-size: 16vpx;
+        color: #666666;
+      }
+
+      .payBtn {
+        width: 250vpx;
+        height: 50vpx;
+        background: #7241FF;
+
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 600;
+        font-size: 20vpx;
+        color: #FFFFFF;
+        border-radius: 30px 30px 30px 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 22vpx 0;
+        cursor: pointer;
+      }
+
+      .btnDisable {
+        width: 250vpx;
+        height: 50vpx;
+        background: #E8E8E8;
+
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 600;
+        font-size: 20vpx;
+        color: #FFFFFF;
+        border-radius: 30px 30px 30px 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 22vpx 0;
+        pointer-events: none; /* 禁用鼠标点击事件 */
+        //color: #999; /* 可选：改变链接颜色以表示禁用状态 */
+        cursor: not-allowed; /* 鼠标指针显示为不可用状态 */
+
+      }
+
+      .line {
+        width: 100%;
+        height: 1px;
+        background-color: #E0E0E0;
+      }
+
+      .rightList {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 40vpx;
+        padding-left: 53vpx;
+        box-sizing: border-box;
+
+        .rightItem {
+          display: flex;
+          align-items: center;
+          margin-bottom: 18vpx;
+
+          .tickIcon {
+            width: 12vpx;
+            height: 12vpx;
+            margin-right: 10vpx;
+          }
+
+          .rightText {
+            font-family: PingFangSC, PingFang SC;
+            font-weight: 400;
+            font-size: 16vpx;
+            color: #666666;
+          }
+        }
+      }
+    }
+  }
+}

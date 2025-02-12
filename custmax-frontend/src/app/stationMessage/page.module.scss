@@ -1,0 +1,42 @@
+.stationMessageContainer {
+  width: 100%;
+  height: 100%;
+  padding-top: 90vpx;
+
+  .main {
+    width: 100%;
+    min-height: calc(100% - 90vpx);
+    background-color: #fff;
+    padding-bottom: 28vpx;
+
+    .title {
+      width: 100%;
+      box-sizing: border-box;
+      padding-right: 53vpx;
+      display: flex;
+      padding-top: 30vpx;
+      padding-bottom: 26vpx;
+      justify-content: flex-end;
+
+      font-family: PingFangSC, PingFang SC;
+      font-weight: 400;
+      font-size: 24vpx;
+      color: #333333;
+      line-height: 33vpx;
+
+      > span {
+        cursor: pointer;
+        &:nth-of-type(2) {
+          padding: 0 0.5em;
+        }
+      }
+    }
+
+    .content {
+      width: 100%;
+      box-sizing: border-box;
+      padding-left: 275vpx;
+      padding-right: 275vpx;
+    }
+  }
+}

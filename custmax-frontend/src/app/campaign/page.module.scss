@@ -1,0 +1,268 @@
+.campaignContainer {
+  width: 100%;
+  height: 100%;
+  padding-top: 90vpx;
+
+  .main {
+    width: 100%;
+    min-height: calc(100% - 90vpx);
+    background-color: #fff;
+    // padding-bottom: 80vpx;
+
+    .title {
+      height: 90vpx;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 170vpx;
+      margin-right: 40vpx;
+      border-bottom: 1px solid #E0E0E0;
+      box-sizing: border-box;
+
+      .titleLeft {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 400;
+        font-size: 20vpx;
+        color: #1E1E69;
+        line-height: 28vpx;
+      }
+
+      .newBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 180vpx;
+        height: 40vpx;
+        background: #7241FF;
+        border-radius: 20vpx;
+        border: 1px solid #7241FF;
+
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 600;
+        font-size: 14vpx;
+        color: #FFFFFF;
+        cursor: pointer;
+      }
+
+
+    }
+
+    .content {
+      margin-left: 170vpx;
+      margin-right: 40vpx;
+      display: flex;
+
+      .viewWrapper {
+        width: 220vpx;
+        height: 890vpx;
+        box-sizing: border-box;
+        background-color: #FCFCFF;
+
+        .viewTitle {
+          height: 90vpx;
+          display: flex;
+          align-items: center;
+          font-family: PingFangSC, PingFang SC;
+          font-weight: 600;
+          font-size: 20vpx;
+          color: #7241FF;
+          border-bottom: 1px solid #E0E0E0;
+          margin: 0 30vpx;
+        }
+
+        .statusTitle {
+          height: 70vpx;
+          display: flex;
+          align-items: center;
+          font-family: PingFangSC, PingFang SC;
+          font-weight: 600;
+          font-size: 20vpx;
+          color: #1E1E69;
+          margin: 0 30vpx;
+        }
+
+        .statusItem {
+          padding: 0 30vpx;
+          height: 60vpx;
+          display: flex;
+          align-items: center;
+          font-family: PingFangSC, PingFang SC;
+          font-weight: 400;
+          font-size: 16vpx;
+          color: #1E1E69;
+          cursor: pointer;
+
+          &.active {
+            font-weight: 600;
+            color: #7241FF;
+            background-color: #F1F1FE;
+          }
+        }
+      }
+
+      .listWrapper {
+        flex: 1;
+
+        .listTitle {
+          font-family: PingFangSC, PingFang SC;
+          font-weight: 600;
+          font-size: 32vpx;
+          color: #333333;
+          line-height: 45vpx;
+          padding: 40vpx;
+        }
+
+        .filterWrapper {
+          margin-top: 40vpx;
+          margin-left: 64vpx;
+          display: flex;
+          justify-content: space-between;
+
+          .searchInput {
+            width: 710vpx;
+            height: 50vpx;
+          }
+
+          .sortWrapper {
+            font-family: PingFangSC, PingFang SC;
+            font-weight: 600;
+            font-size: 20vpx;
+            color: #666666;
+            display: flex;
+            align-items: center;
+
+            .selector {
+              margin-left: 30vpx;
+            }
+          }
+        }
+        
+        .listBox {
+          margin-left: 64vpx;
+          height: 650vpx;
+          overflow: auto;
+
+          .listItem {
+            width: 100%;
+            height: 130vpx;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .listLeft {
+              flex: 2;
+              display: flex;
+              align-items: center;
+
+              .listIcon {
+                width: 56vpx;
+                height: 60vpx;
+                margin: 0 10vpx;
+              }
+
+              .itemDescBox {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 60vpx;
+
+                .itemTitle {
+                  font-family: PingFangSC, PingFang SC;
+                  font-weight: 600;
+                  font-size: 24vpx;
+                  color: #7241FF;
+                }
+                .noItemTitle {
+                  font-family: PingFangSC, PingFang SC;
+                  font-weight: 600;
+                  font-size: 24vpx;
+                  color: #7241FF;
+                  pointer-events: none; /* 禁用鼠标点击事件 */
+                  //color: #999; /* 可选：改变链接颜色以表示禁用状态 */
+                  cursor: not-allowed; /* 鼠标指针显示为不可用状态 */
+                }
+
+
+                .itemDescText {
+                  font-family: PingFangSC, PingFang SC;
+                  font-weight: 400;
+                  font-size: 19vpx;
+                  color: #666666;
+                }
+              }
+            }
+
+            .listCenter {
+              flex: 1;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              .draftStatus {
+                width: 100vpx;
+                height: 24vpx;
+                background:#f0f0f0;
+                border-radius: 2vpx;
+                border: 1px solid #f0f0f0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: PingFangSC, PingFang SC;
+                font-weight: 400;
+                font-size: 14vpx;
+                //color: #000AFF;
+              }
+            }
+
+            .listRight {
+              flex: 1;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              .editBtn {
+                cursor: pointer;
+                width: 120vpx;
+                height: 40vpx;
+                background: #7241FF;
+                border-radius: 20vpx;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: PingFangSC, PingFang SC;
+                font-weight: 600;
+                font-size: 14vpx;
+                color: #FFFFFF;
+                margin-right: 20vpx;
+              }
+              .noEditBtn {
+                //cursor: pointer;
+                width: 120vpx;
+                height: 40vpx;
+                background: #999;
+                border-radius: 20vpx;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: PingFangSC, PingFang SC;
+                font-weight: 600;
+                font-size: 14vpx;
+                color: #FFFFFF;
+                margin-right: 20vpx;
+                //pointer-events: none; /* 禁用鼠标点击事件 */
+                ////color: #999; /* 可选：改变链接颜色以表示禁用状态 */
+                //cursor: not-allowed; /* 鼠标指针显示为不可用状态 */
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

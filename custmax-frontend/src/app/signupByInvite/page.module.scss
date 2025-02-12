@@ -1,0 +1,123 @@
+.signupWrapper {
+  width: 100%;
+  position: relative;
+  padding-top: 90vpx;
+
+  .header {
+    width: 100%;
+    box-sizing: border-box;
+    height: 90vpx;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 170vpx;
+    padding-right: 60vpx;
+    border-bottom: 1px solid #E1E1E1;
+
+    .left {
+      font-family: ArialMT;
+      font-size: 30vpx;
+      color: #333333;
+      line-height: 34vpx;
+    }
+
+    .right {
+      font-family: PingFangSC, PingFang SC;
+      font-weight: 400;
+      font-size: 19vpx;
+      color: #333333;
+      line-height: 26vpx;
+      cursor: pointer;
+    }
+  }
+
+  .formWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 80vpx;
+    padding-bottom: 104vpx;
+    background-color: #fff;
+
+    .signupForm {
+      width: 896vpx;
+
+      :global {
+        .ant-form-item {
+          margin-bottom: 30vpx;
+
+          .ant-form-item-row {
+            display: flex;
+            .ant-form-item-label {
+              label {
+                font-family: PingFangSC, PingFang SC;
+                font-weight: 600;
+                font-size: 20vpx;
+                color: #666666;
+              }
+            }
+
+            .ant-form-item-control {
+              .ant-form-item-control-input {
+                .ant-form-item-control-input-content {
+                  .ant-checkbox-wrapper {
+                    font-family: PingFangSC, PingFang SC;
+                    font-weight: 400;
+                    font-size: 20vpx;
+                    color: #999999;
+                    margin-left: 26%;
+                  }
+
+                  .ant-btn-primary {
+                    width: 497vpx;
+                    height: 50vpx;
+                    margin-left: 26%;
+                    background: #000AFF;
+                    border-radius: 10vpx;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    font-family: PingFangSC, PingFang SC;
+                    font-weight: 600;
+                    font-size: 20vpx;
+                    color: #FFFFFF;
+                  }
+                }
+              }
+            }
+          }
+
+          &:nth-last-of-type(1),
+          &:nth-last-of-type(2) {
+          }
+        }
+      }
+
+      .emailWrapper {
+        display: flex;
+        height: 100%;
+  
+        .verifyBtn {
+          padding: 0 20vpx;
+          background: #000AFF;
+          border-radius: 2vpx;
+          border: 1px solid #0A14D2;
+          font-family: ArialMT;
+          font-size: 18vpx;
+          color: #FFFFFF;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+
+          .disabled {
+            background-color: #ccc;
+          }
+        }
+      }
+    }
+  }
+}

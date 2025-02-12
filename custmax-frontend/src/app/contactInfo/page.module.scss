@@ -1,0 +1,97 @@
+.contactInfoContainer {
+  width: 100%;
+  height: 100%;
+  padding-top: 90vpx;
+  .main {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 210vpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .primaryTitle {
+      width: 100%;
+      box-sizing: border-box;
+      height: 157vpx;
+      background: #FAFAFF;
+      padding-left: 302px;
+      padding-right: 306px;
+
+      .title {
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 400;
+        font-size: 30vpx;
+        color: #000000;
+        line-height: 42vpx;
+        padding-top: 20vpx;
+        padding-bottom: 20vpx;
+      }
+
+      .primaryInfo {
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 400;
+        font-size: 20vpx;
+        color: #000000;
+        line-height: 28vpx;
+        width: 892vpx;
+        padding-bottom: 20vpx;
+      }
+    }
+
+    .content {
+      box-sizing: border-box;
+      width: 100%;
+      padding-left: 282px;
+
+      .primaryItem {
+        display: flex;
+        width: 937vpx;
+        align-items: center;
+        height: 67vpx;
+        border-bottom: 1px solid #D8D8D8;;
+
+        .label {
+          width: 560vpx;
+          font-family: PingFangSC, PingFang SC;
+          font-weight: 600;
+          font-size: 20vpx;
+          color: #000000;
+          line-height: 28vpx;
+          padding-left: 20vpx;
+          box-sizing: border-box;
+        }
+
+        .value {
+          width: 265vpx;
+          font-family: PingFangSC, PingFang SC;
+          font-weight: 400;
+          font-size: 20vpx;
+          color: #000000;
+          line-height: 28vpx;
+        }
+      }
+
+    }
+
+    .editBtn {
+      width: 330vpx;
+      height: 50vpx;
+      background: #000AFF;
+      border-radius: 25vpx;
+      border: 1px solid #0A14D2;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-family: PingFangSC, PingFang SC;
+      font-weight: 600;
+      font-size: 24vpx;
+      color: #FFFFFF;
+      margin: 60vpx 0;
+      cursor: pointer;
+    }
+    
+  }
+}

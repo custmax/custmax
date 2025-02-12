@@ -1,0 +1,288 @@
+.domainCertifyContainer {
+  width: 100%;
+  height: 100%;
+  padding-top: 90vpx;
+
+  .main {
+    width: 100%;
+    min-height: calc(100% - 90vpx);
+    background-color: #fff;
+    padding-bottom: 28vpx;
+
+    .title {
+      font-family: PingFangSC, PingFang SC;
+      font-weight: 400;
+      font-size: 20vpx;
+      color: #999999;
+      line-height: 28vpx;
+      height: 90vpx;
+      display: flex;
+      align-items: center;
+      margin-left: 170vpx;
+      margin-right: 40vpx;
+      border-bottom: 1px solid #E0E0E0;
+      .check{
+        display: flex;
+        margin-left: 1300vpx;
+      }
+    }
+
+    .ver{
+      margin-top: 15vpx;
+      margin-left: 1635vpx;
+    }
+
+
+    .tab{
+
+      font-weight: 400;
+      font-size: 20vpx;
+      width: 1600vpx;
+      margin-left: 170vpx;
+
+
+    }
+
+    .addressWrapper {
+      padding-bottom: 50vpx;
+      padding-top: 50vpx;
+      margin-left: 170vpx;
+      margin-right: 40vpx;
+      border-bottom: 1px solid #E0E0E0;
+      display: flex;
+      justify-content: center;
+
+      &:nth-last-of-type(1) {
+        border: 0;
+      }
+
+      .addressBox {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+  
+        .addressItem {
+          display: flex;
+          align-items: center;
+  
+          .label {
+            font-family: Arial, Arial;
+            font-weight: normal;
+            font-size: 20vpx;
+            color: #666666;
+            line-height: 23vpx;
+            margin-right: 30vpx;
+          }
+  
+          .addressInput {
+            width: 710vpx;
+            height: 50vpx;
+          }
+        }
+  
+        .addressTip {
+          margin-top: 15vpx;
+          font-family: ArialMT;
+          font-size: 14vpx;
+          color: #999999;
+          line-height: 16vpx;
+          padding-right: 170vpx;
+        }
+  
+        .addressBtn {
+          width: 230vpx;
+          height: 50vpx;
+          background: #000AFF;
+          border-radius: 2vpx;
+          border: 1px solid #0A14D2;
+  
+          display: flex;
+          justify-content: center;
+          align-items: center;
+  
+          font-family: ArialMT;
+          font-size: 18vpx;
+          color: #FFFFFF;
+          margin-top: 15vpx;
+          margin-left: 400vpx;
+          cursor: pointer;
+        }
+      }
+
+      .spfBox {
+        .spfTitle {
+          font-family: Arial, Arial;
+          font-weight: normal;
+          font-size: 20vpx;
+          color: #666666;
+          line-height: 23vpx;
+          padding-bottom: 30vpx;
+        }
+
+        .hostName {
+          display: flex;
+          align-items: center;
+          font-family: Arial, Arial;
+          font-weight: normal;
+          font-size: 20vpx;
+          color: #666666;
+          line-height: 23vpx;
+          margin-right: 30vpx;
+          padding-bottom: 30vpx;
+
+          .label {
+            width: 178vpx;
+          }
+
+          .domainBind {
+            margin-left: 30vpx;
+          }
+
+        }
+
+        .txtRecord {
+          display: flex;
+          align-items: center;
+          padding-bottom: 30vpx;
+
+          .label {
+            font-family: Arial, Arial;
+            font-weight: normal;
+            font-size: 20vpx;
+            color: #666666;
+            line-height: 23vpx;
+            margin-right: 30vpx;
+            width: 178vpx;
+          }
+
+          .txtInput {
+            width: 605vpx;
+            height: 50vpx;
+          }
+
+          .copyBtn {
+            height: 50vpx;
+            width: 105vpx;
+            background: #000AFF;
+            border-radius: 2vpx;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: ArialMT;
+            font-size: 18vpx;
+            color: #FFFFFF;
+            cursor: pointer;
+          }
+        }
+
+        .spfTip {
+          padding-left: 208vpx;
+          font-family: ArialMT;
+          font-size: 14px;
+          color: #999999;
+          line-height: 20vpx;
+          width: 710vpx;
+          box-sizing: content-box;
+        }
+      }
+
+      .DKIMBox {
+        .DKIMTitle {
+          font-family: Arial, Arial;
+          font-weight: normal;
+          font-size: 20vpx;
+          color: #666666;
+          line-height: 23vpx;
+          padding-bottom: 30vpx;
+        }
+
+        .hostName {
+          display: flex;
+          align-items: center;
+          font-family: Arial, Arial;
+          font-weight: normal;
+          font-size: 20vpx;
+          color: #666666;
+          line-height: 23vpx;
+          margin-right: 30vpx;
+          padding-bottom: 30vpx;
+  
+          .label {
+            width: 178vpx;
+          }
+
+          .domainBind {
+            margin-left: 30vpx;
+          }
+
+        }
+
+        .txtRecord {
+          display: flex;
+          align-items: center;
+          padding-bottom: 30vpx;
+  
+          .label {
+            font-family: Arial, Arial;
+            font-weight: normal;
+            font-size: 20vpx;
+            color: #666666;
+            line-height: 23vpx;
+            margin-right: 30vpx;
+            width: 178vpx;
+          }
+  
+          .txtInput {
+            width: 605vpx;
+            height: 50vpx;
+          }
+
+          .copyBtn {
+            height: 50vpx;
+            width: 105vpx;
+            background: #000AFF;
+            border-radius: 2vpx;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: ArialMT;
+            font-size: 18vpx;
+            color: #FFFFFF;
+            cursor: pointer;
+          }
+        }
+
+        .operateBox {
+          padding-top: 10vpx;
+          display: flex;
+          align-items: center;
+
+          .share,
+          .verify,
+          .later {
+            height: 40vpx;
+            background: #FFFFFF;
+            border-radius: 2vpx;
+            border: 1px solid #000AFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: ArialMT;
+            font-size: 18vpx;
+            color: #000AFF;
+            margin-right: 60vpx;
+            cursor: pointer;
+          }
+
+          .share {
+            width: 300vpx;
+          }
+          .later {
+            width: 160vpx;
+          }
+        }
+
+      }
+    }
+  }
+}

@@ -1,0 +1,131 @@
+.forgotPwModal {
+  :global {
+    .ant-modal {
+      .ant-modal-content {
+        padding: 40px; /* 统一内边距 */
+        margin: 0; /* 移除默认外边距 */
+        border-radius: 16px; /* 修改圆角 */
+        background-color: #ffffff; /* 背景颜色 */
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+
+        .ant-modal-header {
+          .ant-modal-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'PingFang SC', sans-serif;
+            font-weight: 700; /* 加粗标题 */
+            font-size: 24px; /* 修改字体大小 */
+            color: #4A4A4A; /* 修改颜色 */
+            text-shadow: none; /* 移除阴影 */
+          }
+        }
+      }
+    }
+  }
+
+  .forgotPwContent {
+    padding: 20px; /* 调整内容内边距 */
+
+    .addressBtn {
+      width: 100%; /* 自适应宽度 */
+      height: 40px;
+      margin-top: 20px; /* 调整顶部间距 */
+      background: #4A90E2; /* 修改背景颜色 */
+      border-radius: 20px; /* 保持圆角 */
+      border: none; /* 移除边框 */
+      font-family: 'Arial', sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      color: #FFFFFF;
+      cursor: pointer;
+      transition: background 0.3s; /* 添加过渡效果 */
+
+      display: flex; /* 使用 flexbox */
+      justify-content: center; /* 水平居中 */
+      align-items: center; /* 垂直居中 */
+
+      &:hover {
+        background: #357ABD; /* 悬停时的颜色 */
+      }
+    }
+
+    .addressBt {
+      width: 100%; /* 自适应宽度 */
+      height: 40px;
+      margin-top: 10px; /* 调整顶部间距 */
+      background: #E0E0E0; /* 修改背景颜色 */
+      border-radius: 20px; /* 保持圆角 */
+      border: none; /* 移除边框 */
+      font-family: 'Arial', sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+      color: #666; /* 修改字体颜色 */
+
+      display: flex; /* 使用 flexbox */
+      justify-content: center; /* 水平居中 */
+      align-items: center; /* 垂直居中 */
+      cursor: pointer; /* 添加手指光标 */
+
+      transition: background 0.3s; /* 添加过渡效果 */
+    }
+
+    .addressBt:hover {
+      background: #D0D0D0; /* 悬停时的颜色 */
+    }
+
+    .cancelBtn {
+      width: 100%; /* 自适应宽度 */
+      height: 40px;
+      margin-top: 20px; /* 调整顶部间距 */
+      font-family: 'Arial', sans-serif;
+      font-size: 18px;
+      color: #D9534F; /* 修改为红色 */
+      font-weight: bold;
+      cursor: pointer;
+      text-align: center; /* 居中显示 */
+    }
+
+    .inputItem {
+      display: flex;
+      align-items: center;
+      margin-top: 20px; /* 调整顶部间距 */
+      padding-left: 0; /* 移除左内边距 */
+
+      .label {
+        flex: 1;
+        text-align: right;
+        padding-right: 20px; /* 调整右内边距 */
+        font-family: 'PingFang SC', sans-serif;
+        font-weight: 600;
+        font-size: 16px; /* 修改字体大小 */
+        color: #4A4A4A; /* 修改颜色 */
+      }
+
+      .value {
+        width: 100%; /* 自适应宽度 */
+        height: 40px; /* 调整高度 */
+        border: 1px solid #D9D9D9; /* 添加边框 */
+        border-radius: 20px; /* 保持圆角 */
+        padding: 0 10px; /* 添加内边距 */
+        font-size: 16px; /* 修改字体大小 */
+      }
+
+      .addressBox {
+        width: 100%; /* 自适应宽度 */
+        height: 40px; /* 调整高度 */
+        display: flex;
+        align-items: center;
+
+        .addressValue {
+          border-radius: 20px;
+          width: 100%; /* 自适应宽度 */
+          height: 100%;
+          font-size: 16px; /* 修改字体大小 */
+          border: 1px solid #D9D9D9; /* 添加边框 */
+          padding: 0 10px; /* 添加内边距 */
+        }
+      }
+    }
+  }
+}

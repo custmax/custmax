@@ -1,0 +1,15 @@
+/* styles.css */
+.editor-container {
+  width: 100%; /* 编辑器容器宽度 */
+}
+
+.ql-container {
+  height: auto; /* 自适应高度 */
+}
+
+.ql-editor {
+  max-height: 300px; /* 设置最大高度 */
+  overflow-y: auto; /* 超出时显示垂直滚动条 */
+  overflow-x: hidden; /* 隐藏水平滚动条 */
+  padding: 10px; /* 可选：增加内边距 */
+}

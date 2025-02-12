@@ -1,0 +1,184 @@
+.contentModal {
+  :global {
+    .ant-modal {
+      .ant-modal-content {
+        .ant-modal-header {
+          .ant-modal-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: PingFangSC, PingFang SC;
+            font-weight: 600;
+            font-size: 28vpx;
+            color: #333333;
+          }
+        }
+      }
+    }
+  }
+
+  .main {
+    padding-left: 100vpx;
+    .generate{
+      //width: 200vpx;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 1200vpx;
+      //padding: 20vpx 0;
+      background-color: pink;
+      cursor: pointer;
+    }
+    .AIModal{
+      background-color: pink;
+    }
+    .basicFormWrapper {
+      width: 1005vpx;
+      box-sizing: border-box;
+      border-bottom: 1px solid #E0E0E0;
+      .generate {
+        width: 150vpx;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 10px;
+        background-color: #7241FF;
+        color: white;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 20vpx;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s;
+        margin-bottom: 20px;
+        margin-left: 1100vpx;
+        margin-top: -50vpx;
+        font-size: 20vpx;
+        line-height: 20vpx;
+        &:hover {
+          background-color: #5e35b1; // 改变hover状态下的背景色
+        }
+      }
+      .AIModal{
+        background-color: pink;
+      }
+
+      .uploadWrapper {
+        width:200vpx;
+        //background-color: pink;
+        margin-top: 20px;
+      }
+
+      .label {
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+
+      .addressValue {
+        width: 100vpx;
+        background-color: pink;
+      }
+
+      .basicForm {
+        :global {
+          .ant-form-item {
+            .ant-form-item-row {
+              .ant-form-item-label {
+                > label {
+                  font-family: PingFan  gSC, PingFang SC;
+                  font-weight: 600;
+                  font-size: 20vpx;
+                  color: #666666;
+                }
+              }
+
+              .ant-form-item-control {
+                .ant-form-item-control-input {
+                  min-height: 50vpx;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .richTextTitle {
+      padding: 20vpx 0;
+      font-family: PingFangSC, PingFang SC;
+      font-weight: 600;
+      font-size: 20vpx;
+      color: #666666;
+      line-height: 28vpx;
+    }
+
+    .richText {
+      display: flex;
+
+      .richTextWrapper {
+        width: 1005vpx;
+        :global {
+          .ql-editor {
+            min-height: 362vpx;
+          }
+        }
+      }
+  
+      .presetWrapper {
+        width: 210vpx;
+        padding-left: 43vpx;
+  
+        .presetTitle {
+          font-family: PingFangSC, PingFang SC;
+          font-weight: 600;
+          font-size: 20vpx;
+          color: #666666;
+          line-height: 42vpx;
+          white-space: nowrap;
+        }
+
+        .presetItem {
+          font-family: PingFangSC, PingFang SC;
+          font-size: 20vpx;
+          color: #666666;
+          line-height: 40vpx;
+          cursor: pointer;
+
+          &:nth-of-type(2) {
+            margin-top: 36vpx;
+          }
+        }
+      }
+
+    }
+
+    .aiWrapper {
+      display: flex;
+      margin-top: 28vpx;
+      align-items: center;
+
+      .aiContent {
+        width: 774vpx;
+        height: 109vpx;
+        background: #FFFFFF;
+        border-radius: 2vpx;
+        border: 1px solid #E0E0E0;
+        margin-right: 20vpx;
+        margin-left: 20vpx;
+      }
+
+      .buildBtn {
+        width: 126vpx;
+        height: 50vpx;
+        background: #FFFFFF;
+        border: 1px solid #000AFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 400;
+        font-size: 20vpx;
+        color: #000AFF;
+      }
+    }
+  }
+}

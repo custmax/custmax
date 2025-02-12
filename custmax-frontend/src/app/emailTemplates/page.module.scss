@@ -1,0 +1,334 @@
+
+.emailTemplatesContainer {
+  width: 100%;
+  height: 100%;
+  padding-top: 90vpx;
+
+  .main {
+    width: 100%;
+    min-height: calc(100% - 90vpx);
+    //background-color: #fff;
+    background: #F5F5FE;
+    padding-bottom: 80vpx;
+
+
+    .title {
+      height: 90vpx;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 170vpx;
+      margin-right: 40vpx;
+      border-bottom: 1px solid #E0E0E0;
+      box-sizing: border-box;
+
+      .titleLeft {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 20vpx;
+        color: #1E1E69;
+        line-height: 28vpx;
+      }
+
+      .operateBox {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .searchInputBox {
+          margin-right: 20vpx;
+          width: 240vpx;
+          height: 50vpx;
+          box-sizing: border-box;
+          padding-right: 45vpx;
+          position: relative;
+          border-radius: 25vpx;
+          border: 1px solid #E0E0E0;
+          overflow: hidden;
+
+          :global {
+            .ant-input {
+              width: 100%;
+              height: 100%;
+              border: 0;
+
+              &::placeholder {
+              }
+
+              &:focus,
+              &:hover,
+              &:focus-visible {
+                border: 0;
+                box-shadow: none;
+              }
+            }
+
+          }
+
+          .searchIconBox {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40vpx;
+            height: 40vpx;
+            background: #000AFF;
+            border-radius: 25vpx;
+            border: 1px solid #0A14D2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            .searchIcon {
+              width: 21vpx;
+              height: 21vpx;
+            }
+          }
+        }
+
+        .newBtn {
+          width: 160vpx;
+          height: 50vpx;
+          border-radius: 25vpx;
+          background-color: #000AFF;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: 400;
+          font-size: 20vpx;
+          color: #FFFFFF;
+        }
+      }
+
+    }
+
+    .content {
+      margin-left: 170vpx;
+      margin-right: 40vpx;
+
+
+      .filterBox {
+        width: 100%;
+        margin-top: 20vpx;
+
+
+        .filterBoxSelct {
+          margin-left: 10vpx;
+          width: 252.26vpx;
+          height: 46vpx;
+          opacity: 0.8;
+        }
+
+
+
+      }
+      .editLastWeek{
+
+
+        display: flex;
+        justify-content: right;
+        margin: auto;
+        margin-top: 5vpx;
+        margin-bottom: 5vpx;
+
+        .editLastButton{
+
+          width: 203px;
+          height: 29px;
+          opacity: 1;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: normal;
+          text-align: center;
+          letter-spacing: 0px;
+          font-feature-settings: "kern" on;
+          color: #7241FF;
+        }
+      }
+
+
+      .delDiv {
+        clear: right;
+
+        .delDivButton {
+          float: right;
+          margin: auto;
+          padding-top: 8vpx;
+          padding-right: 10vpx;
+        }
+        .delDivImg {
+          float: right;
+          padding-right: 10vpx;
+        }
+
+        .delDivSelect {
+          width: 252.26vpx;
+          height: 46vpx;
+          border-radius: 6vpx 6vpx 0vpx 0vpx;
+          opacity: 0.706;
+          box-sizing: border-box;
+          border: 1vpx solid #7241FF;
+          float: right;
+          padding-right: 5vpx;
+        }
+
+      }
+
+      .templateTitle {
+        width: 1000vpx;
+        margin-top: 30vpx;
+        margin-bottom: 15vpx;
+        display: flex;
+        justify-content: flex-start;
+        font-weight: 500;
+        font-size: 60vpx;
+        font-style: oblique;
+        color: #333333;
+        line-height: 10vpx;
+
+        .templateReNameImg {
+          width: 40vpx;
+          margin-left: 30vpx;
+          //margin-top: 10vpx;
+        }
+      }
+
+
+      .itemWrapper {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        //justify-content: space-around;
+        width: 100%;
+        background: #F5F5FE;
+        box-sizing: border-box;
+        border: 1px;
+        box-shadow: 0vpx 4vpx 10vpx 0vpx rgba(0, 0, 0, 0.3);
+
+        .itemBox {
+          width: 360vpx;
+          height: 450vpx;
+          align-items: center;
+          margin-right: 48vpx;
+          margin-bottom: 48vpx;
+          cursor: pointer;
+          background: #F5F5FE;
+          box-sizing: border-box;
+          border: 1px;
+          box-shadow: 0vpx 4vpx 10vpx 0vpx rgba(0, 0, 0, 0.3);
+
+
+          .checkBoxDiv {
+
+            width: 20px;
+            height: 20px;
+            opacity: 1;
+            background: #7241FF;
+            position: relative;
+            left: 10px;
+            top: 15px;
+
+            .checkboxInput {
+              position: relative;
+              width: 20px;
+              height: 20px;
+            }
+          }
+
+
+          //&:nth-of-type(5n) {
+          //  margin-right: 0;
+          //}
+          .itemBoxText {
+            width: 400vpx;
+            height: 460vpx;
+            border-radius: 5vpx;
+            opacity: 1;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
+            box-sizing: border-box;
+            border: 1px solid #7241FF;
+
+
+            .text {
+              position: relative;
+              top: -10vpx;
+              width: 315vpx;
+              height: 18vpx;
+              margin: auto;
+
+              font-size: 18vpx;
+
+              text-align: center;
+              letter-spacing: 0vpx;
+              color: #333333;
+              -webkit-line-clamp: 1;
+            }
+
+            .cover {
+              position: relative;
+              top: 10vpx;
+              margin: auto;
+              width: 315vpx;
+              height: 350vpx;
+              opacity: 1;
+              font-size: 10px;
+              font-weight: normal;
+              line-height: normal;
+              font-feature-settings: "kern" on;
+              padding-top: 10vpx;
+              padding-left: 10vpx;
+              color: #3D3D3D;
+              box-sizing: border-box;
+              background: rgba(204, 206, 255, 0.25);
+              font-feature-settings: "kern" on;
+              white-space: nowrap;
+              overflow: hidden; /* 隐藏溢出的文本 */
+              text-overflow: ellipsis;
+              word-break: break-word;
+
+            }
+
+            .itemBoxController {
+              position: relative;
+              top: 25vpx;
+              width: 315vpx;
+              margin: auto;
+              display: flex;
+              justify-content: center;
+
+
+              .itemBoxControllerEdit {
+                image-rendering: auto;
+                width: 20vpx;
+                margin: auto;
+                justify-content: center;
+
+              }
+
+              .itemBoxControllerRedirect {
+                width: 20vpx;
+                margin: auto;
+                justify-content: center;
+              }
+
+              .itemBoxControllerDelete {
+                width: 20vpx;
+                margin: auto;
+                justify-content: center;
+              }
+            }
+
+          }
+
+
+        }
+      }
+    }
+  }
+}
